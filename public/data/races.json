@@ -1,0 +1,94 @@
+{
+  "election": {
+    "state": "Indiana",
+    "cycle": "2026 midterm general election",
+    "electionDate": "2026-11-03",
+    "registerBy": "2026-10-05",
+    "earlyVotingStarts": "2026-10-06",
+    "primaryDate": "2026-05-05",
+    "sources": [
+      "https://ballotpedia.org/Indiana_elections,_2026",
+      "https://www.ballotready.org/elections/indiana-general-election-8e6b0e0c-d097-4715-bedd-2c4825f595c5"
+    ]
+  },
+  "races": [
+    {
+      "id": "in-01",
+      "office": "U.S. House, Indiana District 1",
+      "note": "The only Indiana U.S. House seat both parties consider competitive this cycle.",
+      "candidates": [
+        {
+          "name": "Frank Mrvan",
+          "party": "Democratic",
+          "incumbent": true,
+          "primaryResult": "Won the Democratic primary with 80.2% of the vote (May 5, 2026).",
+          "record": [],
+          "recordStatus": "No verified, individually-sourced record items added yet. Do not publish characterizations of his voting record until items are added here with citations (see AGENTS.md rule 3).",
+          "sources": [
+            "https://ballotpedia.org/Indiana's_1st_Congressional_District_election,_2026"
+          ]
+        },
+        {
+          "name": "Barb Regnitz",
+          "party": "Republican",
+          "incumbent": false,
+          "primaryResult": "Won the Republican primary with 45.8% of the vote (May 5, 2026).",
+          "record": [],
+          "recordStatus": "No verified, individually-sourced record items added yet (candidate has no prior federal voting record to cite; public statements/platform still need sourcing).",
+          "sources": [
+            "https://ballotpedia.org/Indiana's_1st_Congressional_District_election,_2026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-05",
+      "office": "U.S. House, Indiana District 5",
+      "note": "Incumbent vs. a sitting state senator.",
+      "candidates": [
+        {
+          "name": "Victoria Spartz",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Won the Republican primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 158 of 2,898 roll call votes (5.5%) from January 2021 through September 2026 — worse than the 2.1% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/victoria_spartz/456822",
+              "asOf": "2026-09"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates her votes as 92% aligned with Heritage Action's own conservative policy positions (117th Congress). This is Heritage Action's rating, not this site's characterization.",
+              "source": "https://heritageaction.com/scorecard/members/S000929/117",
+              "asOf": "117th Congress"
+            }
+          ],
+          "sources": [
+            "https://ballotpedia.org/Victoria_Spartz",
+            "https://www.govtrack.us/congress/members/victoria_spartz/456822"
+          ]
+        },
+        {
+          "name": "J.D. Ford",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won the Democratic primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["experience"],
+              "fact": "Has represented Indiana State Senate District 29 since 2018.",
+              "source": "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/",
+              "asOf": "2026-04"
+            }
+          ],
+          "recordStatus": "State Senate voting record not yet individually sourced — add specific bill/vote items here before publishing broader characterizations.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/"
+          ]
+        }
+      ]
+    }
+  ]
+}
