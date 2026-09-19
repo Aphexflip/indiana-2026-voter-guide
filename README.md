@@ -16,12 +16,11 @@ This split matters for two reasons: it's what makes the record trustworthy (a so
 
 ## Current coverage
 
-Seeded with real, sourced data for the two competitive U.S. House races:
+All 9 Indiana U.S. House districts and all 3 statewide row offices (Secretary of State, Treasurer, Comptroller/Auditor) are seeded with sourced matchup data — nominees, primary/convention results, and, for incumbents, a comparable attendance record (GovTrack/VoteSee) and Heritage Action's third-party scorecard (quoted, not adopted — see `AGENTS.md`).
 
-- **IN-01**: Frank Mrvan (D, incumbent) vs. Barb Regnitz (R)
-- **IN-05**: Victoria Spartz (R, incumbent) vs. J.D. Ford (D)
+One open item: **IN-07's Republican nominee is not yet confirmed** — the data file flags this explicitly rather than guessing between the two primary candidates found in research.
 
-Not yet built: the other 7 Indiana U.S. House districts, the three statewide row offices (Secretary of State, Auditor, Treasurer), and state legislature races. See `CURRENT_CHECKPOINT.md` for exact next steps.
+Not yet built: state legislature races (100 State House seats, half the State Senate) and deeper voting-record detail beyond the attendance/scorecard baseline for most candidates. See `CURRENT_CHECKPOINT.md` for exact next steps.
 
 ## Sourcing rules
 
@@ -53,6 +52,21 @@ python3 -m http.server 4173 -d public
 ```
 
 Then open `http://localhost:4173`.
+
+## Deploy
+
+`.github/workflows/deploy.yml` deploys to Cloudflare Workers (static assets) automatically on every push to `main`, using the Wrangler CLI in CI rather than Cloudflare's own git integration — this sidesteps the repo-clone failure the `america-explained` project hit when connecting Cloudflare's git-based builds directly.
+
+**To activate it (one-time, needs your Cloudflare account):**
+
+1. Create a Cloudflare API token at [dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens) using the "Edit Cloudflare Workers" template.
+2. Find your Account ID on the right sidebar of any page in the Cloudflare dashboard.
+3. In this repo on GitHub: **Settings → Secrets and variables → Actions**, add:
+   - `CLOUDFLARE_API_TOKEN`
+   - `CLOUDFLARE_ACCOUNT_ID`
+4. Push to `main` (or run the workflow manually from the Actions tab). It'll deploy to `indiana-2026-voter-guide.<your-subdomain>.workers.dev`; attach a custom domain afterward in the Cloudflare dashboard if you want one.
+
+Until those two secrets are added, the workflow will run and fail at the deploy step — that failure is expected and informative, not a bug to chase.
 
 ## Merch
 

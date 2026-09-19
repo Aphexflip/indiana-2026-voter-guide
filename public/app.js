@@ -30,29 +30,36 @@ function renderIndex(data) {
   const filterBar = document.getElementById("issueFilter");
   let activeTag = null;
 
-  function draw() {
-    list.innerHTML = "";
-    for (const race of data.races) {
-      if (!raceMatchesTag(race, activeTag)) continue;
-      const a = document.createElement("a");
-      a.className = "race-card";
-      a.href = `race.html?race=${encodeURIComponent(race.id)}`;
-      const matchup = race.candidates
-        .map(
-          (c) =>
-            `${c.name}<span class="party-tag ${partyClass(c.party)}">${
-              PARTY_ABBR[c.party] || c.party
-            }</span>`
-        )
-        .join(" vs. ");
-      a.innerHTML = `
+  function raceCardHTML(race) {
+    const matchup = race.candidates
+      .map(
+        (c) =>
+          `${c.name}<span class="party-tag ${partyClass(c.party)}">${
+            PARTY_ABBR[c.party] || c.party
+          }</span>`
+      )
+      .join(" vs. ");
+    return `
+      <a class="race-card" href="race.html?race=${encodeURIComponent(race.id)}">
         <div class="office">${race.office}</div>
         <div class="matchup">${matchup}</div>
         ${race.note ? `<div class="race-note">${race.note}</div>` : ""}
-      `;
-      list.appendChild(a);
+      </a>`;
+  }
+
+  function draw() {
+    const visible = data.races.filter((r) => raceMatchesTag(r, activeTag));
+    const categories = [...new Set(data.races.map((r) => r.category || "Other"))];
+
+    list.innerHTML = "";
+    for (const category of categories) {
+      const inCategory = visible.filter((r) => (r.category || "Other") === category);
+      if (!inCategory.length) continue;
+      const section = document.createElement("section");
+      section.innerHTML = `<h2>${category}</h2>` + inCategory.map(raceCardHTML).join("");
+      list.appendChild(section);
     }
-    if (!list.children.length) {
+    if (!visible.length) {
       list.innerHTML = `<p class="race-note">No races tagged "${activeTag}" yet.</p>`;
     }
   }

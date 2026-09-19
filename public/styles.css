@@ -113,6 +113,16 @@ header.hero p.tagline {
   border-color: var(--chip-bg-active);
 }
 
+main section h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 28px 0 10px;
+}
+
+main section:first-child h2 { margin-top: 0; }
+
 .race-card {
   display: block;
   background: var(--surface);

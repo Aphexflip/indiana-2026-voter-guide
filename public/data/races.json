@@ -14,6 +14,7 @@
   "races": [
     {
       "id": "in-01",
+      "category": "U.S. House",
       "office": "U.S. House, Indiana District 1",
       "note": "The only Indiana U.S. House seat both parties consider competitive this cycle.",
       "candidates": [
@@ -22,10 +23,23 @@
           "party": "Democratic",
           "incumbent": true,
           "primaryResult": "Won the Democratic primary with 80.2% of the vote (May 5, 2026).",
-          "record": [],
-          "recordStatus": "No verified, individually-sourced record items added yet. Do not publish characterizations of his voting record until items are added here with citations (see AGENTS.md rule 3).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 41 of 2,915 roll call votes (1.4%) from January 2021 through September 2026 — better than the 2.1% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/frank_mrvan/456821",
+              "asOf": "2026-09"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 0% aligned with Heritage Action's own conservative policy positions (119th Congress). This is Heritage Action's rating, not this site's characterization.",
+              "source": "https://heritageaction.com/scorecard/members/M001214",
+              "asOf": "119th Congress"
+            }
+          ],
           "sources": [
-            "https://ballotpedia.org/Indiana's_1st_Congressional_District_election,_2026"
+            "https://ballotpedia.org/Indiana's_1st_Congressional_District_election,_2026",
+            "https://www.govtrack.us/congress/members/frank_mrvan/456821"
           ]
         },
         {
@@ -34,7 +48,7 @@
           "incumbent": false,
           "primaryResult": "Won the Republican primary with 45.8% of the vote (May 5, 2026).",
           "record": [],
-          "recordStatus": "No verified, individually-sourced record items added yet (candidate has no prior federal voting record to cite; public statements/platform still need sourcing).",
+          "recordStatus": "No federal voting record (not previously in Congress). No verified public-statement/platform items sourced yet.",
           "sources": [
             "https://ballotpedia.org/Indiana's_1st_Congressional_District_election,_2026"
           ]
@@ -42,7 +56,128 @@
       ]
     },
     {
+      "id": "in-02",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 2",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Rudy Yakym",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Unopposed in the Republican primary.",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Cast 436 of 439 roll call votes tracked (99.3% attendance, 3 missed) per VoteSee's voting-record tracker.",
+              "source": "https://www.votesee.org/rep/rudy-yakym-Y000067",
+              "asOf": "2026"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 85% aligned with Heritage Action's own conservative policy positions (119th Congress).",
+              "source": "https://heritageaction.com/scorecard/members/y000067",
+              "asOf": "119th Congress"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/rudy_yakym/456873"]
+        },
+        {
+          "name": "Jamee Decio",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won the Democratic primary with about 72% of the vote (May 5, 2026).",
+          "record": [],
+          "recordStatus": "No federal voting record. Attorney from Elkhart; no verified public-statement/platform items sourced yet.",
+          "sources": [
+            "https://www.wfyi.org/statewide/2026-04-21/two-democrats-are-vying-to-challenge-republican-rudy-yakym-to-represent-michiana-in-indianas-2nd-congressional-district"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-03",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 3",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Marlin Stutzman",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Won the Republican primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 191 of 4,874 roll call votes (3.9%) across his combined House service (2010–2016 and 2025–present) — worse than the 2.0% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/marlin_stutzman/412392",
+              "asOf": "2026-07"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 100% aligned with Heritage Action's own conservative policy positions (119th Congress).",
+              "source": "https://heritageaction.com/scorecard/members/s001188",
+              "asOf": "119th Congress"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/marlin_stutzman/412392"]
+        },
+        {
+          "name": "Kelly Thompson",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Ran unopposed in the Democratic primary.",
+          "record": [],
+          "recordStatus": "No federal voting record. Concrete-company owner and at-risk-youth nonprofit leader; no verified public-statement/platform items sourced yet.",
+          "sources": [
+            "https://www.wboi.org/government/2026-05-06/u-s-rep-marlin-stutzman-easily-cruises-into-general-election"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-04",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 4",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Jim Baird",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Won the Republican primary with about 60% of the vote against state Rep. Craig Haggard (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 80 of 3,838 roll call votes (2.1%) from January 2019 through July 2026 — on par with the 2.0% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/james_baird/412777",
+              "asOf": "2026-07"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 84% aligned with Heritage Action's own conservative policy positions (119th Congress).",
+              "source": "https://heritageaction.com/scorecard/members/B001307",
+              "asOf": "119th Congress"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/james_baird/412777"]
+        },
+        {
+          "name": "Drew Cox",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won a contested Democratic primary against seven other candidates (May 5, 2026).",
+          "record": [],
+          "recordStatus": "No federal voting record. No verified public-statement/platform items sourced yet — this was a large, low-coverage primary field; treat name spelling/background as needing a second source before further claims are added.",
+          "sources": [
+            "https://ballotpedia.org/Indiana's_4th_Congressional_District_election,_2026_(May_5_Democratic_primary)"
+          ]
+        }
+      ]
+    },
+    {
       "id": "in-05",
+      "category": "U.S. House",
       "office": "U.S. House, Indiana District 5",
       "note": "Incumbent vs. a sitting state senator.",
       "candidates": [
@@ -86,6 +221,257 @@
           "recordStatus": "State Senate voting record not yet individually sourced — add specific bill/vote items here before publishing broader characterizations.",
           "sources": [
             "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-06",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 6",
+      "note": "A rematch of the 2024 race, which Shreve won by more than 30 points.",
+      "candidates": [
+        {
+          "name": "Jefferson Shreve",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Won the Republican primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 12 of 657 roll call votes (1.8%) from January 2025 through September 2026 — on par with the 2.1% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/jefferson_shreve/456988",
+              "asOf": "2026-09"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 92% aligned with Heritage Action's own conservative policy positions (119th Congress).",
+              "source": "https://heritageaction.com/scorecard/members/S001229",
+              "asOf": "119th Congress"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/jefferson_shreve/456988"]
+        },
+        {
+          "name": "Cynthia \"Cinde\" Wirth",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won the Democratic primary with 58.8% of the vote (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["prior result"],
+              "fact": "Ran against Shreve in the 2024 general election and lost by more than 30 percentage points.",
+              "source": "https://www.therepublic.com/2026/05/05/wirth-wins-democratic-primary-for-indianas-6th-congressional-district/",
+              "asOf": "2026-05"
+            }
+          ],
+          "recordStatus": "No federal voting record. Small-business owner and former public high school teacher, doctorate from Ball State University.",
+          "sources": [
+            "https://www.therepublic.com/2026/05/05/wirth-wins-democratic-primary-for-indianas-6th-congressional-district/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-07",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 7",
+      "note": "Republican general-election nominee not independently confirmed as of this data's last check — verify before publishing a name.",
+      "candidates": [
+        {
+          "name": "André Carson",
+          "party": "Democratic",
+          "incumbent": true,
+          "primaryResult": "Won the Democratic primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 235 of 11,390 roll call votes (2.1%) from March 2008 through July 2026 — on par with the 2.0% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/andre_carson/412258",
+              "asOf": "2026-07"
+            },
+            {
+              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "fact": "Heritage Action's scorecard rates his votes as 0% aligned with Heritage Action's own conservative policy positions (119th Congress). This is Heritage Action's rating, not this site's characterization.",
+              "source": "https://heritageaction.com/scorecard/members/c001072",
+              "asOf": "119th Congress"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/andre_carson/412258"]
+        },
+        {
+          "name": "Republican nominee — unconfirmed",
+          "party": "Republican",
+          "incumbent": false,
+          "primaryResult": "As of last check, sources named Patrick McAuley and Felipe Rios as the two Republican primary candidates but did not confirm a winner. Do not publish a specific nominee name here until independently verified against the Indiana Election Division or a dated post-primary news report.",
+          "record": [],
+          "recordStatus": "Nominee unconfirmed — see note above.",
+          "sources": [
+            "https://ballotpedia.org/Indiana's_7th_Congressional_District_election,_2026_(May_5_Republican_primary)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-08",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 8",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Mark Messmer",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Unopposed in the Republican primary.",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 13 of 645 roll call votes (2.0%) from January 2025 through July 2026 — on par with the 2.0% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/mark_messmer/456989",
+              "asOf": "2026-07"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/mark_messmer/456989"]
+        },
+        {
+          "name": "Mary Allen",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won the Democratic primary in a four-candidate field (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["experience"],
+              "fact": "Serves as Vice President of the Evansville City Council.",
+              "source": "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/",
+              "asOf": "2026-04"
+            }
+          ],
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-09",
+      "category": "U.S. House",
+      "office": "U.S. House, Indiana District 9",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Erin Houchin",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Won the Republican primary (May 5, 2026).",
+          "record": [
+            {
+              "issueTags": ["attendance", "government accountability"],
+              "fact": "Missed 18 of 1,886 roll call votes (1.0%) from January 2023 through July 2026 — better than the 2.0% median among representatives currently serving.",
+              "source": "https://www.govtrack.us/congress/members/erin_houchin/456903",
+              "asOf": "2026-07"
+            }
+          ],
+          "sources": ["https://www.govtrack.us/congress/members/erin_houchin/456903"]
+        },
+        {
+          "name": "Brad Meyer",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won a four-candidate Democratic primary, defeating Jim Graham, Tim Peck, and Keil Roark (May 5, 2026).",
+          "record": [],
+          "recordStatus": "No federal voting record. No verified public-statement/platform items sourced yet.",
+          "sources": [
+            "https://www.ipm.org/news/2026-04-05/ninth-district-democrats-debate-who-best-suited-to-unseat-houchin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-sos",
+      "category": "Statewide",
+      "office": "Indiana Secretary of State",
+      "note": "Incumbent Diego Morales (R) was defeated at his own party's convention and is not on the November ballot.",
+      "candidates": [
+        {
+          "name": "Max Engling",
+          "party": "Republican",
+          "incumbent": false,
+          "primaryResult": "Nominated at the Republican state convention (June 20, 2026), defeating incumbent Secretary of State Diego Morales and David Shelton.",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/05/21/banks-rokita-drop-support-for-morales-urge-him-to-suspend-secretary-of-state-campaign/"
+          ]
+        },
+        {
+          "name": "Beau Bayh",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Won the Democratic convention nomination with 61% (1,385 to 883 delegate votes over Blythe Potter, June 6, 2026).",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet. Marine, lawyer; son of former Gov./Sen. Evan Bayh.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/06/06/beau-bayh-defeats-blythe-potter-for-democratic-secretary-of-state-nomination/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-treasurer",
+      "category": "Statewide",
+      "office": "Indiana State Treasurer",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Daniel Elliott",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Nominated at the Republican state convention (June 20, 2026).",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/05/27/indiana-dems-announce-treasurer-comptroller-candidates/"
+          ]
+        },
+        {
+          "name": "Coumba Kebe",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Nominated at the Democratic state convention (June 6, 2026).",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet. First-generation American; founder of Scope Consulting in Noblesville.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/05/27/indiana-dems-announce-treasurer-comptroller-candidates/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "in-comptroller",
+      "category": "Statewide",
+      "office": "Indiana Comptroller (Auditor of State)",
+      "note": "",
+      "candidates": [
+        {
+          "name": "Elise Nieshalla",
+          "party": "Republican",
+          "incumbent": true,
+          "primaryResult": "Nominated at the Republican state convention (June 20, 2026).",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/05/27/indiana-dems-announce-treasurer-comptroller-candidates/"
+          ]
+        },
+        {
+          "name": "Jessica Bailey",
+          "party": "Democratic",
+          "incumbent": false,
+          "primaryResult": "Nominated at the Democratic state convention (June 6, 2026).",
+          "record": [],
+          "recordStatus": "No verified record items sourced yet. Former Porter County Clerk.",
+          "sources": [
+            "https://indianacapitalchronicle.com/2026/05/27/indiana-dems-announce-treasurer-comptroller-candidates/"
           ]
         }
       ]
