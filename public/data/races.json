@@ -7,8 +7,8 @@
     "earlyVotingStarts": "2026-10-06",
     "primaryDate": "2026-05-05",
     "sources": [
-      "https://ballotpedia.org/Indiana_elections,_2026",
-      "https://www.ballotready.org/elections/indiana-general-election-8e6b0e0c-d097-4715-bedd-2c4825f595c5"
+      "https://www.in.gov/sos/elections/candidate-information/",
+      "https://ballotpedia.org/Indiana_elections,_2026"
     ]
   },
   "races": [
@@ -16,7 +16,7 @@
       "id": "in-01",
       "category": "U.S. House",
       "office": "U.S. House, Indiana District 1",
-      "note": "The only Indiana U.S. House seat both parties consider competitive this cycle.",
+      "note": "",
       "candidates": [
         {
           "name": "Frank Mrvan",
@@ -25,13 +25,19 @@
           "primaryResult": "Won the Democratic primary with 80.2% of the vote (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 41 of 2,915 roll call votes (1.4%) from January 2021 through September 2026 — better than the 2.1% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/frank_mrvan/456821",
               "asOf": "2026-09"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 0% aligned with Heritage Action's own conservative policy positions (119th Congress). This is Heritage Action's rating, not this site's characterization.",
               "source": "https://heritageaction.com/scorecard/members/M001214",
               "asOf": "119th Congress"
@@ -68,19 +74,27 @@
           "primaryResult": "Unopposed in the Republican primary.",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Cast 436 of 439 roll call votes tracked (99.3% attendance, 3 missed) per VoteSee's voting-record tracker.",
               "source": "https://www.votesee.org/rep/rudy-yakym-Y000067",
               "asOf": "2026"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 85% aligned with Heritage Action's own conservative policy positions (119th Congress).",
               "source": "https://heritageaction.com/scorecard/members/y000067",
               "asOf": "119th Congress"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/rudy_yakym/456873"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/rudy_yakym/456873"
+          ]
         },
         {
           "name": "Jamee Decio",
@@ -108,19 +122,27 @@
           "primaryResult": "Won the Republican primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 191 of 4,874 roll call votes (3.9%) across his combined House service (2010–2016 and 2025–present) — worse than the 2.0% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/marlin_stutzman/412392",
               "asOf": "2026-07"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 100% aligned with Heritage Action's own conservative policy positions (119th Congress).",
               "source": "https://heritageaction.com/scorecard/members/s001188",
               "asOf": "119th Congress"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/marlin_stutzman/412392"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/marlin_stutzman/412392"
+          ]
         },
         {
           "name": "Kelly Thompson",
@@ -148,19 +170,27 @@
           "primaryResult": "Won the Republican primary with about 60% of the vote against state Rep. Craig Haggard (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 80 of 3,838 roll call votes (2.1%) from January 2019 through July 2026 — on par with the 2.0% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/james_baird/412777",
               "asOf": "2026-07"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 84% aligned with Heritage Action's own conservative policy positions (119th Congress).",
               "source": "https://heritageaction.com/scorecard/members/B001307",
               "asOf": "119th Congress"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/james_baird/412777"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/james_baird/412777"
+          ]
         },
         {
           "name": "Drew Cox",
@@ -188,13 +218,19 @@
           "primaryResult": "Won the Republican primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 158 of 2,898 roll call votes (5.5%) from January 2021 through September 2026 — worse than the 2.1% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/victoria_spartz/456822",
               "asOf": "2026-09"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates her votes as 92% aligned with Heritage Action's own conservative policy positions (117th Congress). This is Heritage Action's rating, not this site's characterization.",
               "source": "https://heritageaction.com/scorecard/members/S000929/117",
               "asOf": "117th Congress"
@@ -212,7 +248,9 @@
           "primaryResult": "Won the Democratic primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["experience"],
+              "issueTags": [
+                "experience"
+              ],
               "fact": "Has represented Indiana State Senate District 29 since 2018.",
               "source": "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/",
               "asOf": "2026-04"
@@ -238,19 +276,27 @@
           "primaryResult": "Won the Republican primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 12 of 657 roll call votes (1.8%) from January 2025 through September 2026 — on par with the 2.1% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/jefferson_shreve/456988",
               "asOf": "2026-09"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 92% aligned with Heritage Action's own conservative policy positions (119th Congress).",
               "source": "https://heritageaction.com/scorecard/members/S001229",
               "asOf": "119th Congress"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/jefferson_shreve/456988"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/jefferson_shreve/456988"
+          ]
         },
         {
           "name": "Cynthia \"Cinde\" Wirth",
@@ -259,7 +305,9 @@
           "primaryResult": "Won the Democratic primary with 58.8% of the vote (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["prior result"],
+              "issueTags": [
+                "prior result"
+              ],
               "fact": "Ran against Shreve in the 2024 general election and lost by more than 30 percentage points.",
               "source": "https://www.therepublic.com/2026/05/05/wirth-wins-democratic-primary-for-indianas-6th-congressional-district/",
               "asOf": "2026-05"
@@ -276,7 +324,7 @@
       "id": "in-07",
       "category": "U.S. House",
       "office": "U.S. House, Indiana District 7",
-      "note": "Republican general-election nominee not independently confirmed as of this data's last check — verify before publishing a name.",
+      "note": "",
       "candidates": [
         {
           "name": "André Carson",
@@ -285,29 +333,38 @@
           "primaryResult": "Won the Democratic primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 235 of 11,390 roll call votes (2.1%) from March 2008 through July 2026 — on par with the 2.0% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/andre_carson/412258",
               "asOf": "2026-07"
             },
             {
-              "issueTags": ["fiscal policy", "third-party scorecard"],
+              "issueTags": [
+                "fiscal policy",
+                "third-party scorecard"
+              ],
               "fact": "Heritage Action's scorecard rates his votes as 0% aligned with Heritage Action's own conservative policy positions (119th Congress). This is Heritage Action's rating, not this site's characterization.",
               "source": "https://heritageaction.com/scorecard/members/c001072",
               "asOf": "119th Congress"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/andre_carson/412258"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/andre_carson/412258"
+          ]
         },
         {
-          "name": "Republican nominee — unconfirmed",
+          "name": "Patrick McAuley",
           "party": "Republican",
           "incumbent": false,
-          "primaryResult": "As of last check, sources named Patrick McAuley and Felipe Rios as the two Republican primary candidates but did not confirm a winner. Do not publish a specific nominee name here until independently verified against the Indiana Election Division or a dated post-primary news report.",
+          "primaryResult": "Republican nominee for Indiana's 7th Congressional District in the 2026 general election.",
           "record": [],
-          "recordStatus": "Nominee unconfirmed — see note above.",
+          "recordStatus": "No federal voting record. Additional sourced record items are still being added.",
           "sources": [
-            "https://ballotpedia.org/Indiana's_7th_Congressional_District_election,_2026_(May_5_Republican_primary)"
+            "https://www.wfyi.org/statewide/2026-09-23/2026-voter-guide-indianas-7th-congressional-district",
+            "https://www.fec.gov/data/candidate/H6IN07444/?tab=about-candidate"
           ]
         }
       ]
@@ -325,13 +382,18 @@
           "primaryResult": "Unopposed in the Republican primary.",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 13 of 645 roll call votes (2.0%) from January 2025 through July 2026 — on par with the 2.0% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/mark_messmer/456989",
               "asOf": "2026-07"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/mark_messmer/456989"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/mark_messmer/456989"
+          ]
         },
         {
           "name": "Mary Allen",
@@ -340,7 +402,9 @@
           "primaryResult": "Won the Democratic primary in a four-candidate field (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["experience"],
+              "issueTags": [
+                "experience"
+              ],
               "fact": "Serves as Vice President of the Evansville City Council.",
               "source": "https://indianacapitalchronicle.com/2026/04/20/incumbent-challenges-highlight-indiana-congressional-races/",
               "asOf": "2026-04"
@@ -365,13 +429,18 @@
           "primaryResult": "Won the Republican primary (May 5, 2026).",
           "record": [
             {
-              "issueTags": ["attendance", "government accountability"],
+              "issueTags": [
+                "attendance",
+                "government accountability"
+              ],
               "fact": "Missed 18 of 1,886 roll call votes (1.0%) from January 2023 through July 2026 — better than the 2.0% median among representatives currently serving.",
               "source": "https://www.govtrack.us/congress/members/erin_houchin/456903",
               "asOf": "2026-07"
             }
           ],
-          "sources": ["https://www.govtrack.us/congress/members/erin_houchin/456903"]
+          "sources": [
+            "https://www.govtrack.us/congress/members/erin_houchin/456903"
+          ]
         },
         {
           "name": "Brad Meyer",

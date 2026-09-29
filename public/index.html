@@ -3,33 +3,71 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Indiana // 2026 — the record, not the spin</title>
-<meta name="description" content="Sourced records for Indiana's 2026 midterm candidates, tagged by issue. No endorsements — just what they did and where to check it." />
+<title>Indiana // 2026 — sourced candidate records</title>
+<meta name="description" content="Source-first records for Indiana's 2026 candidates. Read the record, open the source, decide for yourself." />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="wrap">
+<div class="site-shell">
+  <nav class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">IN</span><span>Indiana // 2026</span></a>
+    <div class="nav-links">
+      <a href="#races">Records</a>
+      <a href="method.html">Method</a>
+      <a class="shop-link" href="https://shop.rsymo.com">Shop ↗</a>
+    </div>
+  </nav>
+
   <header class="hero">
-    <h1>Indiana // 2026</h1>
-    <p class="tagline">Here's what they did. You decide what that means for you.</p>
-    <div class="key-dates">
-      <div class="key-date"><strong>Election day</strong>Tue, Nov 3, 2026</div>
-      <div class="key-date"><strong>Register by</strong>Mon, Oct 5, 2026</div>
-      <div class="key-date"><strong>Early voting starts</strong>Tue, Oct 6, 2026</div>
+    <div class="eyebrow">SOURCE-FIRST CIVIC RECORD</div>
+    <h1>The record.<br><span>Without the spin.</span></h1>
+    <p class="hero-copy">Candidate actions, votes, public records, and direct source links in one place. Read the evidence and decide what matters to you.</p>
+    <div class="hero-actions">
+      <a class="button primary" href="#races">Browse races</a>
+      <a class="button secondary" href="method.html">How sourcing works</a>
+    </div>
+    <div class="stats" aria-label="Site coverage">
+      <div><strong id="raceCount">—</strong><span>races tracked</span></div>
+      <div><strong id="recordCount">—</strong><span>sourced record items</span></div>
+      <div><strong>1 click</strong><span>from claim to source</span></div>
     </div>
   </header>
 
-  <div class="model-note">
-    <strong>This isn't an endorsement site.</strong> Every fact here is sourced and applied the same way to every candidate in a race. We're not going to tell you who to vote for — we're going to tell you what they did, and tag it by issue, so you can match it against what you actually care about.
-  </div>
+  <section class="scope-note">
+    <div class="status-dot" aria-hidden="true"></div>
+    <div>
+      <strong>MVP data review is active.</strong>
+      <p>This build currently focuses on the major-party matchup data already in the project. Candidate rosters and record items are refreshed as sources are verified; uncertain items are labeled instead of guessed.</p>
+    </div>
+  </section>
 
-  <div class="issue-filter" id="issueFilter"></div>
+  <section class="records-head" id="races">
+    <div>
+      <div class="eyebrow">EXPLORE THE RECORD</div>
+      <h2>Start with a race or issue.</h2>
+    </div>
+    <a class="text-link" href="method.html">Read the methodology →</a>
+  </section>
 
+  <div class="issue-filter" id="issueFilter" aria-label="Filter by issue"></div>
   <main id="raceList"></main>
 
+  <section class="shop-card">
+    <div>
+      <div class="eyebrow">SEPARATE PROJECT</div>
+      <h2>The shop lives somewhere else.</h2>
+      <p>The fact record and the storefront are intentionally separate properties. Product pages may reference sourced records; record pages stay focused on evidence.</p>
+    </div>
+    <a class="button secondary" href="https://shop.rsymo.com">Visit shop.rsymo.com ↗</a>
+  </section>
+
   <footer>
-    Sources are linked on every claim. Found something wrong or outdated? The data lives in <code>public/data/races.json</code> — corrections welcome.
-    <br />Looking for merch instead of facts? That's a separately-branded, opinionated project — not this one.
+    <div><strong>Indiana // 2026</strong><br>Source-first candidate records. No endorsements.</div>
+    <div class="footer-links">
+      <a href="method.html">Method</a>
+      <a href="https://www.in.gov/sos/elections/candidate-information/" target="_blank" rel="noopener">Indiana candidate information ↗</a>
+      <a href="https://shop.rsymo.com">Shop ↗</a>
+    </div>
   </footer>
 </div>
 <script src="app.js"></script>
