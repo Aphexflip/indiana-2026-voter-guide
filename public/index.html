@@ -3,69 +3,87 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Indiana // 2026 — sourced candidate records</title>
-<meta name="description" content="Source-first records for Indiana's 2026 candidates. Read the record, open the source, decide for yourself." />
+<title>THE RECORD // 2026 — sourced election records</title>
+<meta name="description" content="A source-first 2026 U.S. election record. Open the claim, open the source, decide for yourself." />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+<div class="flag-wash" aria-hidden="true"></div>
 <div class="site-shell">
   <nav class="topbar">
-    <a class="brand" href="index.html"><span class="brand-mark">IN</span><span>Indiana // 2026</span></a>
+    <a class="brand" href="index.html">
+      <span class="brand-mark"><i></i><i></i></span>
+      <span>THE RECORD <b>// 2026</b></span>
+    </a>
     <div class="nav-links">
-      <a href="#races">Records</a>
+      <a href="#featured">Featured</a>
+      <a href="#races">All races</a>
       <a href="method.html">Method</a>
-      <a class="shop-link" href="https://shop.rsymo.com">Shop ↗</a>
+      <a class="shop-link" href="https://shop.rsymo.com">SHOP ↗</a>
     </div>
   </nav>
 
   <header class="hero">
-    <div class="eyebrow">SOURCE-FIRST CIVIC RECORD</div>
-    <h1>The record.<br><span>Without the spin.</span></h1>
-    <p class="hero-copy">Candidate actions, votes, public records, and direct source links in one place. Read the evidence and decide what matters to you.</p>
+    <div class="eyebrow split"><span>2026 U.S. ELECTION RECORD</span></div>
+    <h1>Skip the noise.<br><span>Open the record.</span></h1>
+    <p class="hero-copy">Votes, public records, direct quotations, official documents, and source links — organized so you can inspect the evidence yourself.</p>
     <div class="hero-actions">
-      <a class="button primary" href="#races">Browse races</a>
-      <a class="button secondary" href="method.html">How sourcing works</a>
+      <a class="button primary" href="#featured">See featured races</a>
+      <a class="button secondary" href="#races">Browse all coverage</a>
     </div>
     <div class="stats" aria-label="Site coverage">
-      <div><strong id="raceCount">—</strong><span>races tracked</span></div>
+      <div><strong id="raceCount">—</strong><span>race records live</span></div>
       <div><strong id="recordCount">—</strong><span>sourced record items</span></div>
-      <div><strong>1 click</strong><span>from claim to source</span></div>
+      <div><strong>0</strong><span>endorsements or predictions</span></div>
     </div>
   </header>
 
   <section class="scope-note">
-    <div class="status-dot" aria-hidden="true"></div>
+    <div class="scope-stripe" aria-hidden="true"><i></i><i></i></div>
     <div>
-      <strong>MVP data review is active.</strong>
-      <p>This build currently focuses on the major-party matchup data already in the project. Candidate rosters and record items are refreshed as sources are verified; uncertain items are labeled instead of guessed.</p>
+      <strong>National framework. State-by-state rollout.</strong>
+      <p>The site is now built for U.S. races nationwide. Indiana is the first populated dataset; additional states can be added without changing the site structure.</p>
     </div>
   </section>
+
+  <section class="section-head" id="featured">
+    <div>
+      <div class="eyebrow red">FEATURED COVERAGE</div>
+      <h2>Start here.</h2>
+      <p>Large-format race cards surface a few records first. Featured placement is navigation, not a rating, endorsement, or forecast.</p>
+    </div>
+  </section>
+  <div class="featured-grid" id="featuredRaces"></div>
 
   <section class="records-head" id="races">
     <div>
-      <div class="eyebrow">EXPLORE THE RECORD</div>
-      <h2>Start with a race or issue.</h2>
+      <div class="eyebrow blue">ALL CURRENT COVERAGE</div>
+      <h2>Every race in the record.</h2>
     </div>
-    <a class="text-link" href="method.html">Read the methodology →</a>
+    <a class="text-link" href="method.html">How we source claims →</a>
   </section>
 
-  <div class="issue-filter" id="issueFilter" aria-label="Filter by issue"></div>
+  <div class="toolbar">
+    <div class="state-filter" id="stateFilter" aria-label="Filter by state"></div>
+    <div class="issue-filter" id="issueFilter" aria-label="Filter by issue"></div>
+  </div>
+
   <main id="raceList"></main>
 
   <section class="shop-card">
     <div>
-      <div class="eyebrow">SEPARATE PROJECT</div>
-      <h2>The shop lives somewhere else.</h2>
-      <p>The fact record and the storefront are intentionally separate properties. Product pages may reference sourced records; record pages stay focused on evidence.</p>
+      <div class="eyebrow split"><span>SEPARATE STOREFRONT</span></div>
+      <h2>Same brand. Different job.</h2>
+      <p>The record stays focused on source-linked information. The shop is a separate commerce property for original designs and merchandise.</p>
     </div>
     <a class="button secondary" href="https://shop.rsymo.com">Visit shop.rsymo.com ↗</a>
   </section>
 
   <footer>
-    <div><strong>Indiana // 2026</strong><br>Source-first candidate records. No endorsements.</div>
+    <div><strong>THE RECORD // 2026</strong><br>Source-first election records. No endorsements. No predictions.</div>
     <div class="footer-links">
       <a href="method.html">Method</a>
-      <a href="https://www.in.gov/sos/elections/candidate-information/" target="_blank" rel="noopener">Indiana candidate information ↗</a>
+      <a href="#races">All races</a>
       <a href="https://shop.rsymo.com">Shop ↗</a>
     </div>
   </footer>
