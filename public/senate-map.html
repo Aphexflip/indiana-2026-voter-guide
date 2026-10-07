@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>2026 Senate Forecast Map — THE RECORD // 2026</title>
-<meta name="description" content="Color-coded, regularly refreshed 2026 U.S. Senate election outlook with a searchable state-by-state candidate guide. Sourced forecasts, not endorsements." />
+<title>2026 Election Maps — Senate, Governor & House · THE RECORD // 2026</title>
+<meta name="description" content="Interactive 2026 U.S. election maps: Senate, governor, House and combined state coverage, with sourced third-party forecasts." />
 <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="election-maps.css" />
 <style>
 .senate-hero{padding:68px 0 30px}
 .senate-hero h1{font-size:clamp(43px,7vw,85px);line-height:1;letter-spacing:-.06em;margin:13px 0 22px;max-width:1020px}
@@ -51,18 +52,44 @@
 <div class="site-shell">
 <nav class="topbar">
   <a class="brand" href="index.html"><span class="brand-mark"><i></i><i></i></span><span>THE RECORD <b>// 2026</b></span></a>
-  <div class="nav-links"><a href="index.html">Records</a><a href="senate-map.html" aria-current="page" style="color:#fff">Senate map</a><a href="method.html">Method</a><a class="shop-link" href="https://shop.rsymo.com">SHOP ↗</a></div>
+  <div class="nav-links"><a href="index.html">Records</a><a href="senate-map.html" aria-current="page" style="color:#fff">Election maps</a><a href="method.html">Method</a><a class="shop-link" href="https://shop.rsymo.com">SHOP ↗</a></div>
 </nav>
 <main>
   <header class="senate-hero">
-    <div class="eyebrow split"><span>NOVEMBER 3, 2026 · U.S. SENATE ELECTION</span></div>
-    <h1>Who is ahead <span>in each state?</span></h1>
-    <p>A color-coded election outlook, with each state's leading candidates below. The map is an independent provider's live forecast, not a result, endorsement, or prediction made by THE RECORD.</p>
-    <div class="senate-pillrow"><div class="senate-pill"><strong>35</strong> Senate elections</div><div class="senate-pill"><strong>15</strong> states without a Senate race</div><div class="senate-pill">Forecast: <strong>regularly refreshed by PoliAgg</strong></div></div>
+    <div class="eyebrow split"><span>2026 MIDTERM ELECTIONS · 50-STATE ATLAS</span></div>
+    <h1>Every state. <span>Every major race.</span></h1>
+    <p>Explore 2026 Senate, governor, and U.S. House contests state by state. Switch between factual election-coverage maps, then compare independent Senate and governor forecasts below.</p>
+    <div class="senate-pillrow"><div class="senate-pill"><strong>35</strong> Senate elections</div><div class="senate-pill"><strong>36</strong> governor elections</div><div class="senate-pill"><strong>435</strong> House seats</div><div class="senate-pill">Forecasts: <strong>PoliAgg</strong></div></div>
   </header>
 
-  <section aria-labelledby="live-map-title">
-    <div class="eyebrow blue" id="live-map-title">LIVE THIRD-PARTY FORECAST</div>
+  <section id="explore-maps" class="map-lab" aria-label="Interactive state election map explorer">
+    <div class="eyebrow blue">INTERACTIVE ATLAS · 2026</div>
+    <h2 id="mapModeTitle">Where the 2026 races are</h2>
+    <p class="map-lab-intro">Choose which offices to see, then select any state to inspect its contests. These maps show <strong>which elections are scheduled</strong>, not projected winners or votes cast.</p>
+    <div class="map-tabs" role="tablist" aria-label="Election map type">
+      <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="overview" class="active" aria-selected="true">All races</button>
+      <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="senate" aria-selected="false">Senate elections</button>
+      <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="governor" aria-selected="false">Governor elections</button>
+      <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="house" aria-selected="false">House seats</button>
+    </div>
+    <p id="mapModeDescription" class="map-mode-description">Each state is grouped by which major offices have contests. Every state elects U.S. House representatives; Senate and governor races vary by state.</p>
+    <div id="mapLegend" class="map-legend" aria-label="Map legend">Loading legend…</div>
+    <div class="map-layout">
+      <div>
+        <div id="usElectionMap" class="map-viewport" role="tabpanel" aria-label="United States election map">Loading the interactive map…</div>
+        <div class="map-mapnote"><span id="mapHover">Select any state to inspect its races</span><span>Tap · click · keyboard</span></div>
+      </div>
+      <aside id="mapStateDetails" class="map-details" aria-live="polite">Loading state details…</aside>
+    </div>
+    <div id="mapStats" class="map-stats" aria-label="Election map statistics"></div>
+    <p class="map-status">As of October 6, the November 2026 general-election outcomes are not reported here. Colors on these four maps do not mean a candidate won or a state finished voting.</p>
+    <div class="map-quicklinks"><a href="#forecast-section">↓ Senate forecast</a><a href="#governor-forecast">↓ Governor forecast</a><a href="#candidates-title">↓ Senate candidates</a></div>
+    <p class="map-credit">Sources: <a href="https://www.thegreenpapers.com/G26/Senate.phtml" target="_blank" rel="noopener noreferrer">The Green Papers (Senate)</a>, <a href="https://www.stateside.com/election/2026-gubernatorial-races" target="_blank" rel="noopener noreferrer">Stateside (governors)</a>, <a href="https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html" target="_blank" rel="noopener noreferrer">U.S. Census (House apportionment)</a>. Map geometry: <a href="https://github.com/kaldari/SVG-map-maker" target="_blank" rel="noopener noreferrer">SVG Map Maker</a>, artwork by Theshibboleth, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>; colors/interactivity adapted here. Data checked October 6, 2026.</p>
+  </section>
+
+  <section id="forecast-section" aria-labelledby="live-map-title">
+    <div class="eyebrow blue" id="live-map-title">LIVE THIRD-PARTY FORECAST · SENATE</div>
+    <h2 style="font-size:clamp(30px,5vw,50px);letter-spacing:-.045em;margin:8px 0 0">Who is ahead in the Senate?</h2>
     <div class="senate-frame">
       <iframe id="senateForecast" src="https://poliagg.com/embed/map/senate" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="2026 U.S. Senate state-by-state color forecast — PoliAgg" data-pa-embed="1"></iframe>
     </div>
@@ -70,6 +97,14 @@
       <span>Map and forecast by <a href="https://poliagg.com/map/" target="_blank" rel="noopener noreferrer">PoliAgg ↗</a> (embedded with attribution). Color indicates that publisher's current race outlook, not a guaranteed winner. The provider may use different classifications from other forecasters.</span>
       <a href="https://poliagg.com/embed/map/senate/" target="_blank" rel="noopener noreferrer">Open map directly ↗</a>
     </div>
+  </section>
+
+  <section id="governor-forecast" class="senate-section" aria-label="Independent governor election forecast">
+    <div class="eyebrow red">LIVE THIRD-PARTY FORECAST · GOVERNORS</div>
+    <h2>Governor election outlook.</h2>
+    <p>A separate independent forecast. Red and blue represent PoliAgg's outlook for likely party outcomes, not verified results or endorsements.</p>
+    <div class="senate-frame"><iframe id="governorForecast" src="https://poliagg.com/embed/map/governor" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="2026 U.S. governor election forecast by state — PoliAgg" data-pa-embed="1"></iframe></div>
+    <div class="senate-attribution"><span>Forecast by <a href="https://poliagg.com/map/" target="_blank" rel="noopener noreferrer">PoliAgg ↗</a>, maintained by its publisher and separate from our factual coverage maps.</span><a href="https://poliagg.com/embed/map/governor/" target="_blank" rel="noopener noreferrer">Open map directly ↗</a></div>
   </section>
 
   <section class="senate-section" aria-labelledby="candidates-title">
@@ -96,6 +131,7 @@
 <div class="footer-links"><a href="index.html">Records</a><a href="method.html">Method</a><a href="https://shop.rsymo.com">Shop ↗</a></div>
 </footer>
 </div>
+<script src="election-maps.js" defer></script>
 <script>
 (function(){
   const list=document.getElementById("stateList"), search=document.getElementById("stateSearch"), filter=document.getElementById("electionFilter"), counter=document.getElementById("stateCount");
@@ -121,9 +157,10 @@
   }).catch(()=>{list.innerHTML='<p class="senate-loader">Candidate index unavailable. <a href="https://www.270towin.com/2026-senate-election/">See the current candidates at 270toWin ↗</a>.</p>';counter.textContent=""});
   window.addEventListener("message",function(e){
     if(e.origin!=="https://poliagg.com"||!e.data||e.data.type!=="pa-embed-resize"||typeof e.data.height!=="number")return;
-    const f=document.getElementById("senateForecast");
-    if(typeof e.data.path==="string" && !f.src.includes(e.data.path))return;
-    if(e.data.height>=440&&e.data.height<=2200)f.style.height=Math.ceil(e.data.height)+"px";
+    if(typeof e.data.path!=="string"||e.data.height<440||e.data.height>2200)return;
+    document.querySelectorAll('iframe[data-pa-embed]').forEach(f=>{
+      if(f.src.includes(e.data.path))f.style.height=Math.ceil(e.data.height)+"px";
+    });
   });
 })();
 </script>
