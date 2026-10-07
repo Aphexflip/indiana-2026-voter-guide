@@ -52,3 +52,10 @@ footer{margin-top:74px;padding:30px 0 42px;border-top:1px solid var(--line);disp
   .site-shell,.site-shell.narrow{width:min(100% - 22px,1220px)}.nav-links{gap:11px}.nav-links a:not(.shop-link):nth-child(-n+2){display:none}
   .hero{padding:62px 0 44px}.hero:before{font-size:140px;top:48px}.stats{grid-template-columns:1fr}.section-head,.records-head,.shop-card,footer{align-items:flex-start;flex-direction:column}.candidates,.method-grid{grid-template-columns:1fr}.race-card{grid-template-columns:1fr auto}.shop-card{margin-top:64px}.method-page{padding-top:58px}
 }
+/* Prioritize the new live election desk on small screens. Avoid overflowing the nav. */
+@media(max-width:560px){
+  .topbar:has(.nav-links a[href="election-dashboard.html"]) .nav-links a:not(.shop-link):not([href="election-dashboard.html"]){display:none}
+  .topbar:has(.nav-links a[href="election-dashboard.html"]) .nav-links{gap:8px}
+  .topbar:has(.nav-links a[href="election-dashboard.html"]) .nav-links a{font-size:12px}
+  .topbar:has(.nav-links a[href="election-dashboard.html"]) .nav-links .shop-link{padding:7px 9px}
+}
