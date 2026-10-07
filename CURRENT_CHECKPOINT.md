@@ -1,5 +1,14 @@
 # CURRENT CHECKPOINT
 
+## 2026-10-06 Senate map update
+
+- Added `public/senate-map.html` with a live, third-party 2026 U.S. Senate forecast map using PoliAgg's explicitly permitted and attributed iframe embed. Its publication and changes are controlled by PoliAgg, not by this site. This avoids reproducing proprietary Cook ratings or licensing a map dataset.
+- Added `public/data/senate-candidates-2026.json`: a dated index of selected major U.S. Senate candidates across **all 50 states**, including **35 Senate election states** and **15 states without a Senate race**. Independent challengers surfaced where salient. Names sourced from 270toWin's candidate index, checked October 6.
+- Added homepage navigation and a prominent link to the map, keeping factual records and third-party predictions explicitly separate.
+- The guide data does **not** claim automatic updates; the external embedded map provider says its forecast updates regularly. Recheck the candidates list before any subsequent publication refresh.
+- Hosting reality: this repository's current workflow is **GitHub Pages** (`.github/workflows/pages.yml`). A production custom-domain attachment to `vote.rsymo.com` has not been verified in this pass; confirm the GitHub Pages build and domain separately.
+
+
 **Project:** Indiana // 2026  
 **Date:** 2026-09-29  
 **Canonical repository:** `Aphexflip/indiana-2026-voter-guide`
