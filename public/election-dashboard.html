@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="2026 election status by state: source-dated polling leads, independently modeled Senate, governor and House projections, and verified state election returns when available.">
+<title>2026 Election Dashboard — Polls, Projections & Results | THE RECORD</title>
+<link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="election-dashboard.css">
+</head><body>
+<div class="flag-wash" aria-hidden="true"></div><div class="site-shell">
+<nav class="topbar">
+ <a class="brand" href="index.html"><span class="brand-mark"><i></i><i></i></span><span>THE RECORD <b>// 2026</b></span></a>
+ <div class="nav-links"><a href="index.html">Records</a><a href="senate-map.html">Maps</a><a href="election-dashboard.html" aria-current="page" style="color:white">Live desk</a><a href="method.html">Method</a><a class="shop-link" href="https://shop.rsymo.com">SHOP ↗</a></div>
+</nav>
+<main>
+ <header class="desk-hero">
+  <div class="eyebrow split"><span>2026 MIDTERMS · 50-STATE ELECTION DESK</span></div>
+  <h1>Who's ahead.<br><span>Who's projected.</span><br>Who actually won.</h1>
+  <p>Every state in one place. Switch among polling averages, model projections, and reported election returns. A poll lead is not a projection, a projection is not a result, and an early vote-count lead is not a confirmed win.</p>
+  <div class="desk-statbar"><span><b>50</b> states</span><span><b>35</b> Senate races</span><span><b>36</b> governor races</span><span><b>435</b> House districts</span></div>
+ </header>
+ <section id="stateDashboard" aria-label="Election status by state">
+  <div class="desk-toolbar">
+   <div class="desk-pick" aria-label="Choose election data view" role="group">
+    <button type="button" data-view="polls" aria-pressed="true">📊 Polling leads</button>
+    <button type="button" data-view="forecast" aria-pressed="false">🔮 Projections</button>
+    <button type="button" data-view="results" aria-pressed="false">✓ Results / winners</button>
+   </div>
+   <div class="desk-pick" aria-label="Choose election office" role="group">
+    <button type="button" data-office="senate" aria-pressed="true">Senate</button>
+    <button type="button" data-office="governors" aria-pressed="false">Governors</button>
+    <button type="button" data-office="house" aria-pressed="false">House</button>
+   </div>
+   <input id="deskSearch" type="search" class="desk-search" placeholder="Search all 50 states…" aria-label="Find a state">
+  </div>
+  <p id="deskSource" class="desk-source" role="status">Loading independent polling and forecast sources…</p>
+  <div id="deskCallout" class="desk-callout">2026 election day is Tuesday, November 3. Before official results are reported, the results map will show no winners.</div>
+  <div id="deskKpis" class="desk-kpis"></div>
+  <div class="desk-layout">
+   <div>
+    <div id="deskMap" class="desk-map-shell" aria-label="Interactive 50-state election map"><p class="desk-map-loading">Loading state map…</p></div>
+    <div id="deskLegend" class="desk-legend" aria-label="Color legend"></div>
+   </div>
+   <aside class="desk-detail" id="deskDetails" aria-live="polite"><div class="eyebrow">STATE DETAILS</div><h2>Texas</h2><p>Loading race details…</p></aside>
+  </div>
+  <div class="desk-grid-title"><h2 id="deskGridTitle">All 50 states</h2><small id="deskCount">Loading…</small></div>
+  <div class="desk-grid" id="deskStates"></div>
+ </section>
+ <section class="desk-credits">
+ <p><strong>Methods and sources.</strong> Polling leads are taken from the independent model publisher’s source-weighted poll averages, only when polling is available; they are not certified vote totals. Projections are the publisher’s simulations, which can disagree with polling leads. Model API: <a href="https://www.pollingforecast.com/us/data" target="_blank" rel="noopener noreferrer">Polling Forecast (CC BY 4.0) ↗</a>. Source values are labelled with their own as-of date.</p>
+ <p>2026 election returns, where available, are unprojected counts from state election offices as relayed by <a href="https://openamerica.io/elections/api/" target="_blank" rel="noopener noreferrer">Open America ↗</a>. Its current feeds cover only 22 states and <strong>do not call races or certify winners</strong>. The site will say “counting,” “unavailable,” or “no confirmed winner” as appropriate. State return feeds are not nationwide. House results include individual districts, not a single statewide House winner. To verify an election call or certification, consult the relevant election authority or a named race-calling news organization.</p>
+ <p>50-state base geometry: <a href="https://github.com/kaldari/SVG-map-maker" target="_blank" rel="noopener noreferrer">SVG Map Maker / Theshibboleth (CC BY-SA 3.0) ↗</a>. Source methods, license and dates are shown instead of inventing poll averages where none exist. <a href="senate-map.html">Classic maps and third-party forecast embeds ↗</a>.</p>
+ </section>
+</main>
+<footer><div><strong>THE RECORD // 2026</strong><p>Polling ≠ forecast ≠ votes counted ≠ a confirmed winner.</p></div><div class="footer-links"><a href="index.html">Records</a><a href="senate-map.html">Maps</a><a href="method.html">Method</a></div></footer>
+</div>
+<script src="election-dashboard.js" defer></script>
+</body></html>
