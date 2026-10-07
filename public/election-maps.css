@@ -43,3 +43,18 @@
 .map-quicklinks a:hover{background:#192e4f}
 @media(max-width:910px){.map-layout{grid-template-columns:minmax(0,1fr)}.map-details{min-height:unset}.map-lab{padding:20px}.map-viewport svg{max-height:520px}}
 @media(max-width:600px){.map-lab{margin-left:-5px;margin-right:-5px;padding:14px;border-radius:17px}.map-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.map-tabs button{border-radius:10px;font-size:12px;padding:11px 6px}.map-viewport{padding:3px;min-height:205px}.map-viewport svg{min-height:195px}.map-details{padding:16px}.map-legend{gap:9px 12px}.map-swatch{width:13px;height:12px}}
+
+/* Sourced polling snapshot; distinct from third-party forecasts and office coverage maps. */
+.poll-spotlight{background:linear-gradient(120deg,rgba(33,118,255,.17),#10192d 47%,rgba(239,51,64,.13));border:1px solid #314260;border-radius:24px;padding:30px;margin:22px 0 40px}
+.poll-spotlight h2{font-size:clamp(30px,5vw,48px);letter-spacing:-.05em;line-height:1.12;margin:8px 0}
+.poll-spotlight>p{color:#c4d0e0;font-size:14px;margin:7px 0 19px;max-width:840px}
+.poll-snapshot{border:1px solid #334a68;background:#0d1627;border-radius:15px;padding:20px;max-width:780px}
+.poll-headline{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px;font-weight:750}
+.poll-headline span:nth-child(2){font-size:11px;font-weight:500;color:#adbfce}
+.poll-headline b{display:block;font-size:clamp(26px,4vw,36px);letter-spacing:-.04em;color:#fff}
+.poll-range{display:flex;width:100%;height:15px;border-radius:100px;overflow:hidden;margin:19px 0 16px;background:#3b4860;gap:3px}
+.poll-lead{font-size:15px;color:#e3ebf6}.poll-lead strong{color:#fff}
+.poll-sources{color:#b6c6db;font-size:12px;margin-top:13px}
+.poll-sources a,.poll-spotlight .poll-explain a{color:#9bc5ff;text-decoration:underline}
+.poll-spotlight .poll-explain{font-size:12px;color:#afc0d5;margin:14px 0 0}
+@media(max-width:600px){.poll-spotlight{padding:19px 14px;border-radius:16px;margin-left:-5px;margin-right:-5px}.poll-snapshot{padding:15px}.poll-headline{font-size:12px}.poll-headline b{font-size:25px}}
