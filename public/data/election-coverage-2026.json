@@ -1,0 +1,413 @@
+{
+  "asOf": "2026-10-06",
+  "electionYear": 2026,
+  "election": "2026 general election",
+  "notes": "Factual office-level election coverage only. This does not report votes cast, turnout, polls, candidate preference, winners, or confirmed results. The 2026 general election has not yet taken place as of this snapshot.",
+  "states": [
+    {
+      "abbr": "AL",
+      "name": "Alabama",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 7
+    },
+    {
+      "abbr": "AK",
+      "name": "Alaska",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 1
+    },
+    {
+      "abbr": "AZ",
+      "name": "Arizona",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 9
+    },
+    {
+      "abbr": "AR",
+      "name": "Arkansas",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "CA",
+      "name": "California",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 52
+    },
+    {
+      "abbr": "CO",
+      "name": "Colorado",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 8
+    },
+    {
+      "abbr": "CT",
+      "name": "Connecticut",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 5
+    },
+    {
+      "abbr": "DE",
+      "name": "Delaware",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 1
+    },
+    {
+      "abbr": "FL",
+      "name": "Florida",
+      "senate": true,
+      "senateSpecial": true,
+      "governor": true,
+      "houseSeats": 28
+    },
+    {
+      "abbr": "GA",
+      "name": "Georgia",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 14
+    },
+    {
+      "abbr": "HI",
+      "name": "Hawaii",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "ID",
+      "name": "Idaho",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "IL",
+      "name": "Illinois",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 17
+    },
+    {
+      "abbr": "IN",
+      "name": "Indiana",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 9
+    },
+    {
+      "abbr": "IA",
+      "name": "Iowa",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "KS",
+      "name": "Kansas",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "KY",
+      "name": "Kentucky",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 6
+    },
+    {
+      "abbr": "LA",
+      "name": "Louisiana",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 6
+    },
+    {
+      "abbr": "ME",
+      "name": "Maine",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "MD",
+      "name": "Maryland",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 8
+    },
+    {
+      "abbr": "MA",
+      "name": "Massachusetts",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 9
+    },
+    {
+      "abbr": "MI",
+      "name": "Michigan",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 13
+    },
+    {
+      "abbr": "MN",
+      "name": "Minnesota",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 8
+    },
+    {
+      "abbr": "MS",
+      "name": "Mississippi",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "MO",
+      "name": "Missouri",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 8
+    },
+    {
+      "abbr": "MT",
+      "name": "Montana",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "NE",
+      "name": "Nebraska",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 3
+    },
+    {
+      "abbr": "NV",
+      "name": "Nevada",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "NH",
+      "name": "New Hampshire",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "NJ",
+      "name": "New Jersey",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 12
+    },
+    {
+      "abbr": "NM",
+      "name": "New Mexico",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 3
+    },
+    {
+      "abbr": "NY",
+      "name": "New York",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 26
+    },
+    {
+      "abbr": "NC",
+      "name": "North Carolina",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 14
+    },
+    {
+      "abbr": "ND",
+      "name": "North Dakota",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 1
+    },
+    {
+      "abbr": "OH",
+      "name": "Ohio",
+      "senate": true,
+      "senateSpecial": true,
+      "governor": true,
+      "houseSeats": 15
+    },
+    {
+      "abbr": "OK",
+      "name": "Oklahoma",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 5
+    },
+    {
+      "abbr": "OR",
+      "name": "Oregon",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 6
+    },
+    {
+      "abbr": "PA",
+      "name": "Pennsylvania",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 17
+    },
+    {
+      "abbr": "RI",
+      "name": "Rhode Island",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "SC",
+      "name": "South Carolina",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 7
+    },
+    {
+      "abbr": "SD",
+      "name": "South Dakota",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 1
+    },
+    {
+      "abbr": "TN",
+      "name": "Tennessee",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 9
+    },
+    {
+      "abbr": "TX",
+      "name": "Texas",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 38
+    },
+    {
+      "abbr": "UT",
+      "name": "Utah",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 4
+    },
+    {
+      "abbr": "VT",
+      "name": "Vermont",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 1
+    },
+    {
+      "abbr": "VA",
+      "name": "Virginia",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 11
+    },
+    {
+      "abbr": "WA",
+      "name": "Washington",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 10
+    },
+    {
+      "abbr": "WV",
+      "name": "West Virginia",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": false,
+      "houseSeats": 2
+    },
+    {
+      "abbr": "WI",
+      "name": "Wisconsin",
+      "senate": false,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 8
+    },
+    {
+      "abbr": "WY",
+      "name": "Wyoming",
+      "senate": true,
+      "senateSpecial": false,
+      "governor": true,
+      "houseSeats": 1
+    }
+  ],
+  "sourceLinks": {
+    "senate": "https://www.thegreenpapers.com/G26/Senate.phtml",
+    "governor": "https://www.stateside.com/election/2026-gubernatorial-races",
+    "house": "https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html"
+  }
+}
