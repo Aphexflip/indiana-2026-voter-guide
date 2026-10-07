@@ -1,5 +1,14 @@
 # CURRENT CHECKPOINT
 
+## 2026-10-06 Texas polling gap resolved
+
+- User noticed that James Talarico was leading Ken Paxton in Texas polls while our map did not show polling figures. Root cause: the atlas only contained **office coverage and third-party forecasts**, not polling averages.
+- Sourced RealClearPolling Texas 2026 Senate average: **Talarico (D) 48.4%**, **Paxton (R) 45.3%**, **Talarico +3.1 percentage points**. Poll window September 12–October 5, 2026; verified October 6, 2026. RCP race rating **Toss Up**. Verified independent corroboration from FiftyPlusOne: Talarico 48.6%, Paxton 45.4% on October 6.
+- Added static `public/data/senate-polling-snapshots-2026.json` with source URL, retrieval date, names, window, numbers, and rating. It is a manually verified **snapshot**, not a live API or automatically refreshing feed.
+- Added prominent Texas polling card, a distinct **Polling leaders** map tab, Texas polling figures inside the state detail panel, and a dated homepage link to the breakdown. **States without curated polling stay gray**, indicating unindexed data rather than tied races or Republican/Democratic leads.
+- Keep poll averages, forecasts, and actual election returns clearly separated. Do not claim winner probabilities or automatic polling refresh. Next incremental improvement: curated national battleground polling coverage with source/date QA and automated expiry warnings before election night.
+
+
 ## 2026-10-06 multi-map atlas expansion
 
 - Upgraded `public/senate-map.html` into a responsive 2026 **election map explorer** with four clickable state layers: combined office coverage, Senate contest states, governor contest states, and U.S. House seat-count choropleth.
