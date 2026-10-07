@@ -1,0 +1,397 @@
+{
+  "asOf": "2026-10-06",
+  "description": "Major 2026 U.S. Senate candidates, not a complete list of qualified ballot candidates. No candidate endorsements or independent ratings.",
+  "candidatesSource": "https://www.270towin.com/2026-senate-election/",
+  "states": [
+    {
+      "abbr": "AL",
+      "name": "Alabama",
+      "election": true,
+      "democratic": "Everett Wess",
+      "republican": "Barry Moore",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "AK",
+      "name": "Alaska",
+      "election": true,
+      "democratic": "Mary Peltola",
+      "republican": "Dan Sullivan",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "AZ",
+      "name": "Arizona",
+      "election": false
+    },
+    {
+      "abbr": "AR",
+      "name": "Arkansas",
+      "election": true,
+      "democratic": "Hallie Shoffner",
+      "republican": "Tom Cotton",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "CA",
+      "name": "California",
+      "election": false
+    },
+    {
+      "abbr": "CO",
+      "name": "Colorado",
+      "election": true,
+      "democratic": "John Hickenlooper",
+      "republican": "Mark Baisley",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "CT",
+      "name": "Connecticut",
+      "election": false
+    },
+    {
+      "abbr": "DE",
+      "name": "Delaware",
+      "election": true,
+      "democratic": "Chris Coons",
+      "republican": "Michael Katz",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "FL",
+      "name": "Florida",
+      "election": true,
+      "democratic": "Angie Nixon",
+      "republican": "Ashley Moody",
+      "other": null,
+      "note": "Special election"
+    },
+    {
+      "abbr": "GA",
+      "name": "Georgia",
+      "election": true,
+      "democratic": "Jon Ossoff",
+      "republican": "Mike Collins",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "HI",
+      "name": "Hawaii",
+      "election": false
+    },
+    {
+      "abbr": "ID",
+      "name": "Idaho",
+      "election": true,
+      "democratic": "Todd Achilles",
+      "republican": "Jim Risch",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "IL",
+      "name": "Illinois",
+      "election": true,
+      "democratic": "Juliana Stratton",
+      "republican": "Don Tracy",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "IN",
+      "name": "Indiana",
+      "election": false
+    },
+    {
+      "abbr": "IA",
+      "name": "Iowa",
+      "election": true,
+      "democratic": "Josh Turek",
+      "republican": "Ashley Hinson",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "KS",
+      "name": "Kansas",
+      "election": true,
+      "democratic": "Adam Hamilton",
+      "republican": "Roger Marshall",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "KY",
+      "name": "Kentucky",
+      "election": true,
+      "democratic": "Charles Booker",
+      "republican": "Andy Barr",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "LA",
+      "name": "Louisiana",
+      "election": true,
+      "democratic": "Jamie Davis",
+      "republican": "Julia Letlow",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "ME",
+      "name": "Maine",
+      "election": true,
+      "democratic": "Troy Jackson",
+      "republican": "Susan Collins",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "MD",
+      "name": "Maryland",
+      "election": false
+    },
+    {
+      "abbr": "MA",
+      "name": "Massachusetts",
+      "election": true,
+      "democratic": "Ed Markey",
+      "republican": "John Deaton",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "MI",
+      "name": "Michigan",
+      "election": true,
+      "democratic": "Abdul El-Sayed",
+      "republican": "Mike Rogers",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "MN",
+      "name": "Minnesota",
+      "election": true,
+      "democratic": "Peggy Flanagan",
+      "republican": "Michele Tafoya",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "MS",
+      "name": "Mississippi",
+      "election": true,
+      "democratic": "Scott Colom",
+      "republican": "Cindy Hyde-Smith",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "MO",
+      "name": "Missouri",
+      "election": false
+    },
+    {
+      "abbr": "MT",
+      "name": "Montana",
+      "election": true,
+      "democratic": "Alani Bankhead",
+      "republican": "Kurt Alme",
+      "other": "Seth Bodnar (Independent)",
+      "note": null
+    },
+    {
+      "abbr": "NE",
+      "name": "Nebraska",
+      "election": true,
+      "democratic": null,
+      "republican": "Pete Ricketts",
+      "other": "Dan Osborn (Independent)",
+      "note": null
+    },
+    {
+      "abbr": "NV",
+      "name": "Nevada",
+      "election": false
+    },
+    {
+      "abbr": "NH",
+      "name": "New Hampshire",
+      "election": true,
+      "democratic": "Chris Pappas",
+      "republican": "John Sununu",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "NJ",
+      "name": "New Jersey",
+      "election": true,
+      "democratic": "Cory Booker",
+      "republican": "Justin Murphy",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "NM",
+      "name": "New Mexico",
+      "election": true,
+      "democratic": "Ben Ray Luján",
+      "republican": "Larry Marker",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "NY",
+      "name": "New York",
+      "election": false
+    },
+    {
+      "abbr": "NC",
+      "name": "North Carolina",
+      "election": true,
+      "democratic": "Roy Cooper",
+      "republican": "Michael Whatley",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "ND",
+      "name": "North Dakota",
+      "election": false
+    },
+    {
+      "abbr": "OH",
+      "name": "Ohio",
+      "election": true,
+      "democratic": "Sherrod Brown",
+      "republican": "Jon Husted",
+      "other": null,
+      "note": "Special election"
+    },
+    {
+      "abbr": "OK",
+      "name": "Oklahoma",
+      "election": true,
+      "democratic": "N'Kiyla Thomas",
+      "republican": "Kevin Hern",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "OR",
+      "name": "Oregon",
+      "election": true,
+      "democratic": "Jeff Merkley",
+      "republican": "David Smith",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "PA",
+      "name": "Pennsylvania",
+      "election": false
+    },
+    {
+      "abbr": "RI",
+      "name": "Rhode Island",
+      "election": true,
+      "democratic": "Jack Reed",
+      "republican": "Raymond McKay",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "SC",
+      "name": "South Carolina",
+      "election": true,
+      "democratic": "Annie Andrews",
+      "republican": "Darline Graham",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "SD",
+      "name": "South Dakota",
+      "election": true,
+      "democratic": "Brian Bengs",
+      "republican": "Mike Rounds",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "TN",
+      "name": "Tennessee",
+      "election": true,
+      "democratic": "Marquita Bradshaw",
+      "republican": "Bill Hagerty",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "TX",
+      "name": "Texas",
+      "election": true,
+      "democratic": "James Talarico",
+      "republican": "Ken Paxton",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "UT",
+      "name": "Utah",
+      "election": false
+    },
+    {
+      "abbr": "VT",
+      "name": "Vermont",
+      "election": false
+    },
+    {
+      "abbr": "VA",
+      "name": "Virginia",
+      "election": true,
+      "democratic": "Mark Warner",
+      "republican": "Bert Mizusawa",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "WA",
+      "name": "Washington",
+      "election": false
+    },
+    {
+      "abbr": "WV",
+      "name": "West Virginia",
+      "election": true,
+      "democratic": "Rachel Fetty Anderson",
+      "republican": "Shelley Moore Capito",
+      "other": null,
+      "note": null
+    },
+    {
+      "abbr": "WI",
+      "name": "Wisconsin",
+      "election": false
+    },
+    {
+      "abbr": "WY",
+      "name": "Wyoming",
+      "election": true,
+      "democratic": "James Byrd",
+      "republican": "Harriet Hageman",
+      "other": null,
+      "note": null
+    }
+  ]
+}
