@@ -14,6 +14,10 @@ This is **not** an advocacy site. It does not say "vote for X." It says "X did Y
 
 This split matters for two reasons: it's what makes the record trustworthy (a source that argues for a side stops being a source), and it keeps this project out of express-advocacy territory under Indiana campaign finance law. See `COMPLIANCE.md` before publishing anything or selling anything.
 
+## 2026 U.S. Senate map
+
+The site includes `public/senate-map.html`: a color-coded third-party forecast (PoliAgg official embed) with a dated index of major candidates in all 50 states. This is an **attributed external forecast**, not an endorsement, site-authored probability model, or a voting recommendation. The embedded map can refresh independently; the local candidate index is dated and must be reviewed before updating.
+
 ## Current coverage
 
 All 9 Indiana U.S. House districts and all 3 statewide row offices (Secretary of State, Treasurer, Comptroller/Auditor) are seeded with sourced matchup data — nominees, primary/convention results, and, for incumbents, a comparable attendance record (GovTrack/VoteSee) and Heritage Action's third-party scorecard (quoted, not adopted — see `AGENTS.md`).
@@ -39,8 +43,10 @@ public/
   race.html         single-race template, reads ?race= from URL
   styles.css
   app.js            renders race data client-side
+  senate-map.html   embedded Senate forecast + 50-state roster
   data/
     races.json      all race + candidate + record data
+    senate-candidates-2026.json  dated 50-state Senate candidates
 ```
 
 No backend required for the MVP. A Cloudflare Pages/Workers deploy (matching the RSYMO ecosystem) can be added later if personalization or a submissions pipeline is needed — don't add that complexity before it's earned.
