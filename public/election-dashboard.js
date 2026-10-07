@@ -127,7 +127,7 @@
    const p=projection(r), q=polling(r), v=countedRace(r);
    const l=left(r), dname=r.left_candidate||"Candidate not listed", rname=r.rep_candidate||"Candidate not listed";
    const source=forecast[office];
-   const link=typeof r.page==="string"&&r.page.startsWith("/us/")?"https://www.pollingforecast.com"+r.page:"https://www.pollingforecast.com/us/data";
+   const link=typeof r.page==="string"&&/^\/us\/[a-z0-9\-\/]+$/i.test(r.page)?"https://www.pollingforecast.com"+r.page:"https://www.pollingforecast.com/us/data";
    let body="";
    if(view==="polls"){
      body=q?'<div class="desk-metric"><strong>'+esc(partyName(q.party))+' +'+fixed(q.margin)+' points</strong> · '+esc(q.source)+' · '+datePretty(q.date)+(q.polls!==null&&q.polls!==undefined?' · '+q.polls+' polls':'')+'</div>':
