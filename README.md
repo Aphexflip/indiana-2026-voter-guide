@@ -14,6 +14,10 @@ This is **not** an advocacy site. It does not say "vote for X." It says "X did Y
 
 This split matters for two reasons: it's what makes the record trustworthy (a source that argues for a side stops being a source), and it keeps this project out of express-advocacy territory under Indiana campaign finance law. See `COMPLIANCE.md` before publishing anything or selling anything.
 
+## Live 50-state polling, projections, and returns dashboard
+
+`public/election-dashboard.html` has state-by-state election detail for the 2026 Senate (35), governors (36), and U.S. House (435 districts). It offers **polling leaders**, **independent model projections**, and **officially reported returns** as different views. Data is retrieved from Polling Forecast's open, credited CC BY 4.0 API and Open America's partial-coverage public state-returns feed. Poll numbers and projections must always display provider and as-of dates. Election results coverage is partial and Open America **does not call races or certify winners**. Before November 3, no 2026 general-election winner exists. Avoid conflating a poll lead, projected favorite, counted-vote leader or certified winner.
+
 ## 2026 election atlas
 
 The site's interactive map explorer is at `public/senate-map.html`, linked from the homepage. It has four state map layers: Senate contests (35 states), governor contests (36), the office-combination overview, and a choropleth of all **435** U.S. House voting seats across 50 states. State clicks show details. Source snapshots, checked October 6, 2026, are in `public/data/election-coverage-2026.json` and `public/data/senate-candidates-2026.json`.
