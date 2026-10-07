@@ -1,5 +1,15 @@
 # CURRENT CHECKPOINT
 
+## 2026-10-06 nationwide polling, projections and returns dashboard
+
+- Added `public/election-dashboard.html`, `public/election-dashboard.css`, and `public/election-dashboard.js` with 50-state clickable SVG map, searchable state cards, per-office filters (**Senate, governors, House**), and three strictly separated views (**Polling leaders**, **Model projections**, **Results / winners**).
+- **Polling/model data:** browser fetches from `https://www.pollingforecast.com/api/us/{senate,governors,house}`, open CORS API. Covers all 35 Senate, 36 governor and 435 House races. Displays actual model as-of date, polling count or no average, candidate names, projected probability and rating. Reuse permitted under provider's explicit **CC BY 4.0**, linked onsite. House rows remain district-specific; statewide summaries aggregate by seat, not popular vote. Preserve RCP's more recent Texas Oct 6 snapshot when newer than model dataset.
+- **Official votes:** browser separately requests `https://openamerica.io/elections/results.json?year=2026&office={Senate,Governor,House}`. It covers only 22 states and **never calls races**: before Nov 3 no general-election winners; after opening the returns show vote leaders and counted votes but do not call them winners. If explicitly called in a future compatible feed, only `called=true` with winner is permitted to label winner. Browser cross-origin access errors are visible as unavailable, not zero votes.
+- Refresh while page is open: model half-hourly; results 10 minutes before counting, minute when live. This is **client-side**, not a server-scheduled background monitor. No promise of notifications, official certification or all-50-state election-night returns.
+- Homepage and classic maps page link to the new dashboard. Map geometry remains credited as CC BY-SA 3.0.
+- Pending: verify live page renders all remote cross-origin datasets; confirm the `vote.rsymo.com` custom domain. Consider a durable scheduled cache/proxy for source outages and a *separate licensed race-call feed* for nationwide verified winner calls.
+
+
 ## 2026-10-06 Texas polling gap resolved
 
 - User noticed that James Talarico was leading Ken Paxton in Texas polls while our map did not show polling figures. Root cause: the atlas only contained **office coverage and third-party forecasts**, not polling averages.
