@@ -1,0 +1,32 @@
+:root{--desk:#080e1b;--pane:#111d31;--edge:#2d3e58;--sub:#9aacc5;--dem:#2876d8;--rep:#d54f61;--ind:#906acb}
+.desk-hero{padding:56px 0 25px}.desk-hero h1{font-size:clamp(44px,7vw,84px);letter-spacing:-.064em;line-height:1.01;margin:12px 0 20px}.desk-hero h1 span{color:#73afff}.desk-hero p{font-size:17px;color:#b4c5da;max-width:920px}
+.desk-statbar{display:flex;gap:11px;flex-wrap:wrap;margin:22px 0 5px}
+.desk-statbar span{background:#111d31;padding:9px 16px;border-radius:100px;border:1px solid var(--edge);color:#c8d6e5;font-size:12px}.desk-statbar b{color:#fff}
+.desk-toolbar{position:sticky;top:0;z-index:12;display:flex;align-items:center;gap:10px;flex-wrap:wrap;background:rgba(8,14,27,.97);padding:14px 0 18px;border-bottom:1px solid var(--edge);backdrop-filter:blur(10px)}
+.desk-pick{display:flex;gap:6px;background:#101a2c;border:1px solid #2f425e;border-radius:13px;padding:5px;flex-wrap:wrap}
+.desk-pick button{font:inherit;font-size:13px;font-weight:750;letter-spacing:-.01em;border:0;border-radius:9px;background:transparent;color:#b4c2d6;cursor:pointer;padding:10px 15px}
+.desk-pick button[aria-pressed=true]{color:white;background:#28518c;box-shadow:0 3px 14px #020915}
+.desk-pick button:focus-visible{outline:3px solid #8bbdff}
+.desk-search{flex:1 1 160px;min-width:120px;max-width:320px;background:#101a2c;border:1px solid #354560;color:white;font-size:14px;padding:13px 15px;border-radius:12px}
+.desk-source{font-size:12px;color:#a3b6cb;margin:13px 0 19px;line-height:1.6}
+.desk-source a,.desk-credits a{color:#9ec5ff}
+.desk-layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.9fr);gap:17px}
+.desk-map-shell,.desk-detail{border:1px solid #2b3e58;border-radius:19px;background:linear-gradient(145deg,#15243a,#0e1728);overflow:hidden}
+.desk-map-shell{padding:9px}.desk-map-shell svg{width:100%;height:auto;display:block;max-height:530px}.desk-map-shell #outlines>path,.desk-map-shell #outlines>circle{stroke:#cce2fa;stroke-width:1.1;cursor:pointer}.desk-map-shell #outlines>path:hover,.desk-map-shell #outlines>circle:hover{filter:brightness(1.2);stroke:#fff;stroke-width:2.4}.desk-map-shell .chosen-state{stroke:#fbe09b!important;stroke-width:3.5!important}
+.desk-map-loading{padding:100px 35px;text-align:center;color:#acbfd9}.desk-detail{padding:25px;min-height:380px}
+.desk-detail .eyebrow{color:#90bcff}.desk-detail h2{font-size:clamp(26px,3.1vw,40px);line-height:1.1;letter-spacing:-.05em;margin:8px 0 17px}
+.desk-detail p{color:#b9c8d8;font-size:13px}.desk-race{border-top:1px solid #34455c;padding:16px 0}.desk-race h3{font-size:17px;letter-spacing:-.02em;margin:0 0 10px}.desk-race h3 em{font-size:11px;color:#b9c7da;font-style:normal;margin-left:7px}
+.desk-candidates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0}.desk-candidate{background:#0b1425;border:1px solid #2c3b53;padding:12px;border-radius:12px;font-size:12px}.desk-candidate b{font-size:14px;display:block;margin:3px 0;word-break:break-word}.desk-candidate small{color:#9eb3ca}
+.desk-metric{padding:11px 12px;border-radius:10px;background:#182b46;margin-top:9px;font-size:12px;line-height:1.5}.desk-metric strong{color:#fff}
+.desk-metric.error{background:#392b37}.desk-metric.live{background:#164235}.desk-race a{color:#9bc7ff;font-size:12px}
+.desk-legend{display:flex;gap:10px 15px;align-items:center;flex-wrap:wrap;padding:14px 6px}.desk-legend span{font-size:12px;color:#bcd0e6;display:flex;align-items:center;gap:6px}.desk-legend i{width:14px;height:14px;border:1px solid #d0e0f9;border-radius:4px;display:inline-block}
+.desk-kpis{display:flex;gap:10px;flex-wrap:wrap;padding:0 0 20px}.desk-kpis span{background:#111f34;border:1px solid #2a3a55;padding:9px 12px;border-radius:9px;font-size:12px;color:#c4d5e7}.desk-kpis b{color:#fff}
+.desk-grid-title{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin:43px 0 14px}.desk-grid-title h2{font-size:30px;letter-spacing:-.04em;margin:0}.desk-grid-title small{font-size:12px;color:#b4c1d1}
+.desk-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.desk-card{font:inherit;text-align:left;cursor:pointer;background:#121d30;border:1px solid #30405b;border-radius:15px;color:#dbe5f5;padding:16px;min-height:139px;display:flex;flex-direction:column;gap:5px}.desk-card:hover{border-color:#94bded}.desk-card[aria-pressed=true]{outline:2px solid #e1c073}.desk-card strong{font-size:17px;color:#fff}.desk-card .desk-flag{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:5px}.desk-card small{color:#aac0d6;font-size:11px;line-height:1.5}.desk-card .desk-card-status{font-size:13px;font-weight:750;margin-top:auto}
+.desk-callout{border-left:4px solid #5394ec;background:#121d2e;padding:15px 18px;color:#c1d0e2;border-radius:0 11px 11px 0;margin:18px 0 23px;font-size:13px;line-height:1.6}.desk-callout b{color:#fff}
+.desk-credits{font-size:12px;color:#9dacc2;line-height:1.75;margin:30px 0 75px}
+.desk-error{font-size:12px;color:#f2c3c6}
+@media(max-width:950px){.desk-layout{grid-template-columns:1fr}.desk-grid{grid-template-columns:repeat(3,1fr)}.desk-detail{min-height:0}}
+@media(max-width:680px){.desk-grid{grid-template-columns:repeat(2,1fr)}.desk-map-shell{padding:4px}.desk-pick button{padding:9px 11px;font-size:12px}.desk-toolbar{position:relative;top:auto}.desk-detail{padding:17px}.desk-search{max-width:none}.desk-hero{padding-top:33px}}
+@media(max-width:420px){.desk-grid{grid-template-columns:1fr}.desk-card{min-height:110px}.desk-candidates{grid-template-columns:1fr}}
