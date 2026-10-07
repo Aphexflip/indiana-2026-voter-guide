@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>2026 Senate Forecast Map — THE RECORD // 2026</title>
+<meta name="description" content="Color-coded, regularly refreshed 2026 U.S. Senate election outlook with a searchable state-by-state candidate guide. Sourced forecasts, not endorsements." />
+<link rel="stylesheet" href="styles.css" />
+<style>
+.senate-hero{padding:68px 0 30px}
+.senate-hero h1{font-size:clamp(43px,7vw,85px);line-height:1;letter-spacing:-.06em;margin:13px 0 22px;max-width:1020px}
+.senate-hero h1 span{color:var(--blue-2)}
+.senate-hero p{max-width:900px;color:#c4ccda;font-size:clamp(16px,2vw,20px);margin:0}
+.senate-pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.senate-pill{border:1px solid var(--line);border-radius:100px;padding:7px 12px;font-size:12px;color:#e8ebf2;background:#10182a}
+.senate-pill strong{color:#fff}
+.senate-frame{margin:28px 0 10px;padding:14px;background:#0c1220;border:1px solid #263147;border-radius:22px;box-shadow:0 26px 70px rgba(0,0,0,.22);overflow:hidden}
+.senate-frame iframe{width:100%;height:780px;max-width:100%;border:0;background:#0c1220;display:block;border-radius:12px}
+.senate-attribution{color:var(--muted);font-size:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;padding:5px 4px 12px}
+.senate-attribution a,.senate-fineprint a{color:#9bc5ff}
+.senate-section{margin:70px 0 28px}
+.senate-section h2{font-size:clamp(32px,5vw,53px);letter-spacing:-.045em;margin:12px 0}
+.senate-section p{color:var(--muted);max-width:890px}
+.senate-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:22px 0}
+.senate-search,.senate-filter{background:#121a2b;border:1px solid #344058;border-radius:12px;padding:13px 15px;font:inherit;font-size:15px;color:var(--text);min-height:48px}
+.senate-search{flex:1 1 330px}.senate-filter{flex:0 1 260px}
+.senate-search:focus,.senate-filter:focus{outline:2px solid #66a5ff;outline-offset:2px}
+.senate-count{color:var(--muted);font-size:12px;margin-bottom:14px}
+.senate-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.senate-state{background:#10182a;border:1px solid #2a354b;border-radius:16px;padding:18px;min-height:160px;display:flex;flex-direction:column}
+.senate-state h3{margin:0 0 12px;font-size:18px;letter-spacing:-.025em}
+.senate-state .abbr{font-size:10px;letter-spacing:.14em;color:#aeb5c5;float:right;margin-top:4px}
+.senate-state .cand{font-size:13px;margin-top:5px;color:#dce3ee}
+.senate-state .cand .marker{font-weight:800;font-size:11px;display:inline-block;border-radius:6px;padding:1px 6px;margin-right:6px;min-width:21px;text-align:center}
+.senate-state .cand .dem{background:#164e97;color:#e1eeff}
+.senate-state .cand .rep{background:#972f40;color:#ffe6e9}
+.senate-state .cand .other{background:#5b5381;color:#f1eaff}
+.senate-state .state-sub{font-size:12px;color:#aab5c5;margin-top:7px}
+.senate-state.no-election{background:#0c111d;min-height:126px}
+.senate-state.no-election .state-sub{margin-top:3px}
+.senate-state a{font-size:12px;color:#94c3ff;text-decoration:none;margin-top:auto;padding-top:12px;display:block}
+.senate-state a:hover{text-decoration:underline}
+.senate-fineprint{font-size:12px;color:#aab5c5;line-height:1.8;border-left:3px solid var(--blue);padding-left:18px;margin-top:34px}
+.senate-loader{color:#cbd5e6;padding:24px;border:1px solid var(--line);border-radius:12px}
+@media(max-width:960px){.senate-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.senate-list{grid-template-columns:1fr}.senate-frame{padding:6px;margin-left:-5px;margin-right:-5px}.senate-hero{padding-top:43px}.senate-section{margin-top:50px}.senate-frame iframe{height:720px}}
+</style>
+</head>
+<body>
+<div class="flag-wash" aria-hidden="true"></div>
+<div class="site-shell">
+<nav class="topbar">
+  <a class="brand" href="index.html"><span class="brand-mark"><i></i><i></i></span><span>THE RECORD <b>// 2026</b></span></a>
+  <div class="nav-links"><a href="index.html">Records</a><a href="senate-map.html" aria-current="page" style="color:#fff">Senate map</a><a href="method.html">Method</a><a class="shop-link" href="https://shop.rsymo.com">SHOP ↗</a></div>
+</nav>
+<main>
+  <header class="senate-hero">
+    <div class="eyebrow split"><span>NOVEMBER 3, 2026 · U.S. SENATE ELECTION</span></div>
+    <h1>Who is ahead <span>in each state?</span></h1>
+    <p>A color-coded election outlook, with each state's leading candidates below. The map is an independent provider's live forecast, not a result, endorsement, or prediction made by THE RECORD.</p>
+    <div class="senate-pillrow"><div class="senate-pill"><strong>35</strong> Senate elections</div><div class="senate-pill"><strong>15</strong> states without a Senate race</div><div class="senate-pill">Forecast: <strong>regularly refreshed by PoliAgg</strong></div></div>
+  </header>
+
+  <section aria-labelledby="live-map-title">
+    <div class="eyebrow blue" id="live-map-title">LIVE THIRD-PARTY FORECAST</div>
+    <div class="senate-frame">
+      <iframe id="senateForecast" src="https://poliagg.com/embed/map/senate" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="2026 U.S. Senate state-by-state color forecast — PoliAgg" data-pa-embed="1"></iframe>
+    </div>
+    <div class="senate-attribution">
+      <span>Map and forecast by <a href="https://poliagg.com/map/" target="_blank" rel="noopener noreferrer">PoliAgg ↗</a> (embedded with attribution). Color indicates that publisher's current race outlook, not a guaranteed winner. The provider may use different classifications from other forecasters.</span>
+      <a href="https://poliagg.com/embed/map/senate/" target="_blank" rel="noopener noreferrer">Open map directly ↗</a>
+    </div>
+  </section>
+
+  <section class="senate-section" aria-labelledby="candidates-title">
+    <div class="eyebrow red">STATE-BY-STATE GUIDE</div>
+    <h2 id="candidates-title">Candidates in every state.</h2>
+    <p>Search all 50 states, including the 15 without a Senate election this year. Names are a dated reference list; the forecast above can change independently. A "toss-up" means there is no clear winner to name.</p>
+    <div class="senate-controls">
+      <input class="senate-search" id="stateSearch" type="search" placeholder="Search state or candidate…" aria-label="Search states and candidates" autocomplete="off" />
+      <select class="senate-filter" id="electionFilter" aria-label="Filter Senate elections">
+        <option value="all">All 50 states</option>
+        <option value="election">Senate race in 2026</option>
+        <option value="no">No Senate race in 2026</option>
+      </select>
+    </div>
+    <p class="senate-count" id="stateCount" aria-live="polite"></p>
+    <div id="stateList" class="senate-list"><p class="senate-loader">Loading candidate list…</p></div>
+    <div class="senate-fineprint">
+      <strong>How to interpret this:</strong> The forecast is an outside assessment of likely outcomes, not an endorsement or a voting recommendation. Map ratings are different from polling percentages, and competitive races can change. Names are selected major candidates, not the full official ballot. Candidate list checked <time datetime="2026-10-06">October 6, 2026</time> against <a href="https://www.270towin.com/2026-senate-election/" target="_blank" rel="noopener noreferrer">270toWin's candidate overview</a>. Compare alternate judgments at <a href="https://www.cookpolitical.com/ratings/senate-race-ratings" target="_blank" rel="noopener noreferrer">Cook Political Report</a>. District-specific House races and candidate records remain on <a href="index.html">THE RECORD homepage</a>.
+    </div>
+  </section>
+</main>
+<footer>
+<div><strong>THE RECORD // 2026</strong><p>Source-first candidate information. No candidate endorsements. External forecasts are clearly labeled.</p></div>
+<div class="footer-links"><a href="index.html">Records</a><a href="method.html">Method</a><a href="https://shop.rsymo.com">Shop ↗</a></div>
+</footer>
+</div>
+<script>
+(function(){
+  const list=document.getElementById("stateList"), search=document.getElementById("stateSearch"), filter=document.getElementById("electionFilter"), counter=document.getElementById("stateCount");
+  const escapeHTML=(v)=>String(v==null?"":v).replace(/[&<>"']/g,(c)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+  const line=(name,kind,label)=>name?'<div class="cand"><span class="marker '+kind+'">'+label+'</span>'+escapeHTML(name)+'</div>':"";
+  function render(states){
+    const term=search.value.trim().toLowerCase(), mode=filter.value;
+    const shown=states.filter(s=>(mode==="all"||(mode==="election"===s.election?"election":"no"))&&[s.name,s.abbr,s.democratic||"",s.republican||"",s.other||""].join(" ").toLowerCase().includes(term));
+    counter.textContent=shown.length+" state"+(shown.length===1?"":"s")+" shown · 35 elections in 2026 nationwide";
+    list.innerHTML=shown.map(s=>'<article class="senate-state'+(s.election?'':' no-election')+'">'+
+      '<h3>'+escapeHTML(s.name)+'<span class="abbr">'+escapeHTML(s.abbr)+'</span></h3>'+
+      (s.election?
+        line(s.democratic,"dem","D")+line(s.republican,"rep","R")+line(s.other,"other","I")+
+        (s.note?'<div class="state-sub">'+escapeHTML(s.note)+'</div>':"")+
+        '<a href="https://www.270towin.com/2026-senate-election/" target="_blank" rel="noopener noreferrer">Verify candidates ↗</a>':
+        '<div class="state-sub">No U.S. Senate seat up for election in 2026.</div>')+
+      '</article>').join("")||'<p class="senate-loader">No states match that search.</p>';
+  }
+  fetch("data/senate-candidates-2026.json").then(r=>{if(!r.ok)throw Error("Candidate index unavailable");return r.json()}).then(data=>{
+    if(!Array.isArray(data.states)||data.states.length!==50)throw Error("Incomplete state index");
+    const states=data.states.slice().sort((a,b)=>a.name.localeCompare(b.name));
+    search.addEventListener("input",()=>render(states));filter.addEventListener("change",()=>render(states));render(states);
+  }).catch(()=>{list.innerHTML='<p class="senate-loader">Candidate index unavailable. <a href="https://www.270towin.com/2026-senate-election/">See the current candidates at 270toWin ↗</a>.</p>';counter.textContent=""});
+  window.addEventListener("message",function(e){
+    if(e.origin!=="https://poliagg.com"||!e.data||e.data.type!=="pa-embed-resize"||typeof e.data.height!=="number")return;
+    const f=document.getElementById("senateForecast");
+    if(typeof e.data.path==="string" && !f.src.includes(e.data.path))return;
+    if(e.data.height>=440&&e.data.height<=2200)f.style.height=Math.ceil(e.data.height)+"px";
+  });
+})();
+</script>
+</body>
+</html>
