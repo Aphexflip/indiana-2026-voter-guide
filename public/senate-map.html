@@ -62,15 +62,24 @@
     <div class="senate-pillrow"><div class="senate-pill"><strong>35</strong> Senate elections</div><div class="senate-pill"><strong>36</strong> governor elections</div><div class="senate-pill"><strong>435</strong> House seats</div><div class="senate-pill">Forecasts: <strong>PoliAgg</strong></div></div>
   </header>
 
+  <section id="texas-polling" class="poll-spotlight" aria-labelledby="pollSpotlightTitle">
+    <div class="eyebrow blue">FEATURED POLLING · TEXAS SENATE</div>
+    <h2 id="pollSpotlightTitle">Who's ahead in Texas?</h2>
+    <p>The latest verified polling snapshot is separate from the forecast map below. Poll leads indicate survey preferences, <strong>not who will necessarily win.</strong></p>
+    <div id="pollSpotlightData" aria-live="polite" class="poll-snapshot">Loading sourced Texas polling average…</div>
+    <p class="poll-explain">Polling figures are manually checked and dated; they do not update automatically on this static site. The linked polling source provides newer figures when available. <a href="#explore-maps">Explore the polling-leads map ↓</a></p>
+  </section>
+
   <section id="explore-maps" class="map-lab" aria-label="Interactive state election map explorer">
     <div class="eyebrow blue">INTERACTIVE ATLAS · 2026</div>
     <h2 id="mapModeTitle">Where the 2026 races are</h2>
-    <p class="map-lab-intro">Choose which offices to see, then select any state to inspect its contests. These maps show <strong>which elections are scheduled</strong>, not projected winners or votes cast.</p>
+    <p class="map-lab-intro">Choose which offices to see, then select any state to inspect its contests. The first four views show <strong>which elections are scheduled</strong>, not projected winners or votes cast. The polling view separately shows only source-verified polling averages loaded into this site (currently Texas).</p>
     <div class="map-tabs" role="tablist" aria-label="Election map type">
       <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="overview" class="active" aria-selected="true">All races</button>
       <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="senate" aria-selected="false">Senate elections</button>
       <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="governor" aria-selected="false">Governor elections</button>
       <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="house" aria-selected="false">House seats</button>
+      <button type="button" role="tab" aria-controls="usElectionMap" data-map-mode="polling" aria-selected="false">Polling leaders</button>
     </div>
     <p id="mapModeDescription" class="map-mode-description">Each state is grouped by which major offices have contests. Every state elects U.S. House representatives; Senate and governor races vary by state.</p>
     <div id="mapLegend" class="map-legend" aria-label="Map legend">Loading legend…</div>
@@ -82,8 +91,8 @@
       <aside id="mapStateDetails" class="map-details" aria-live="polite">Loading state details…</aside>
     </div>
     <div id="mapStats" class="map-stats" aria-label="Election map statistics"></div>
-    <p class="map-status">As of October 6, the November 2026 general-election outcomes are not reported here. Colors on these four maps do not mean a candidate won or a state finished voting.</p>
-    <div class="map-quicklinks"><a href="#forecast-section">↓ Senate forecast</a><a href="#governor-forecast">↓ Governor forecast</a><a href="#candidates-title">↓ Senate candidates</a></div>
+    <p class="map-status">As of October 6, the November 2026 general-election outcomes are not reported here. Colors on the office-coverage maps do not mean a candidate won or a state finished voting. The polling layer reflects dated survey averages, not certified votes or election forecasts.</p>
+    <div class="map-quicklinks"><a href="#texas-polling">↑ Texas polling</a><a href="#forecast-section">↓ Senate forecast</a><a href="#governor-forecast">↓ Governor forecast</a><a href="#candidates-title">↓ Senate candidates</a></div>
     <p class="map-credit">Sources: <a href="https://www.thegreenpapers.com/G26/Senate.phtml" target="_blank" rel="noopener noreferrer">The Green Papers (Senate)</a>, <a href="https://www.stateside.com/election/2026-gubernatorial-races" target="_blank" rel="noopener noreferrer">Stateside (governors)</a>, <a href="https://www.census.gov/data/tables/2020/dec/2020-apportionment-data.html" target="_blank" rel="noopener noreferrer">U.S. Census (House apportionment)</a>. Map geometry: <a href="https://github.com/kaldari/SVG-map-maker" target="_blank" rel="noopener noreferrer">SVG Map Maker</a>, artwork by Theshibboleth, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>; colors/interactivity adapted here. Data checked October 6, 2026.</p>
   </section>
 
