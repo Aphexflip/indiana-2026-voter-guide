@@ -1,5 +1,16 @@
 # CURRENT CHECKPOINT
 
+## 2026-10-06 multi-map atlas expansion
+
+- Upgraded `public/senate-map.html` into a responsive 2026 **election map explorer** with four clickable state layers: combined office coverage, Senate contest states, governor contest states, and U.S. House seat-count choropleth.
+- Coverage data: `public/data/election-coverage-2026.json` — 50 states, 35 Senate elections (including FL and OH specials), 36 governor elections, **435** apportioned voting House seats. Checked against The Green Papers, Stateside Associates, and the U.S. Census Bureau. The map data is a dated snapshot, not a real-time vote feed.
+- Geometry: `public/assets/blank-usa-map.svg`, credited to Theshibboleth (CC BY-SA 3.0) via the original SVG Map Maker project. Page includes the attribution and license.
+- Implementation: `public/election-maps.js` and `public/election-maps.css`, all served as static assets; state shape hit-testing, clickable and keyboard-selectable details, responsive legends, a fallback state list, and a clearly labeled no-results-yet state.
+- Added an attributed independent **governor forecast** next to the existing independent **Senate forecast**, both from PoliAgg's officially documented embeddable widgets.
+- Updated the homepage to link to the full election atlas.
+- Validate runtime on the published Pages URL and custom hostname. There is **no verified automatic election-night returns ingestion**; do not label a state "voted", "called", or "won" without separate verified published results.
+
+
 ## 2026-10-06 Senate map update
 
 - Added `public/senate-map.html` with a live, third-party 2026 U.S. Senate forecast map using PoliAgg's explicitly permitted and attributed iframe embed. Its publication and changes are controlled by PoliAgg, not by this site. This avoids reproducing proprietary Cook ratings or licensing a map dataset.
