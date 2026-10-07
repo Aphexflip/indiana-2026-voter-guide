@@ -14,6 +14,14 @@ This is **not** an advocacy site. It does not say "vote for X." It says "X did Y
 
 This split matters for two reasons: it's what makes the record trustworthy (a source that argues for a side stops being a source), and it keeps this project out of express-advocacy territory under Indiana campaign finance law. See `COMPLIANCE.md` before publishing anything or selling anything.
 
+## 2026 election atlas
+
+The site's interactive map explorer is at `public/senate-map.html`, linked from the homepage. It has four state map layers: Senate contests (35 states), governor contests (36), the office-combination overview, and a choropleth of all **435** U.S. House voting seats across 50 states. State clicks show details. Source snapshots, checked October 6, 2026, are in `public/data/election-coverage-2026.json` and `public/data/senate-candidates-2026.json`.
+
+Two separate third-party PoliAgg maps show live **Senate** and **governor** forecasts; those forecasts are not endorsed or authored by this site. The map explorer deliberately displays neither turnout, the number of votes cast, projected winners, nor declared results. An actual election-night results/status feature would require a verified live results feed.
+
+Map geometry is a CC BY-SA 3.0 artwork by Theshibboleth obtained from the MIT-licensed SVG Map Maker project. Original project, artist credit, license, and data sources are linked on the map page.
+
 ## 2026 U.S. Senate map
 
 The site includes `public/senate-map.html`: a color-coded third-party forecast (PoliAgg official embed) with a dated index of major candidates in all 50 states. This is an **attributed external forecast**, not an endorsement, site-authored probability model, or a voting recommendation. The embedded map can refresh independently; the local candidate index is dated and must be reviewed before updating.
