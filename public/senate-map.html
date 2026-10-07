@@ -103,7 +103,7 @@
   const line=(name,kind,label)=>name?'<div class="cand"><span class="marker '+kind+'">'+label+'</span>'+escapeHTML(name)+'</div>':"";
   function render(states){
     const term=search.value.trim().toLowerCase(), mode=filter.value;
-    const shown=states.filter(s=>(mode==="all"||(mode==="election"===s.election?"election":"no"))&&[s.name,s.abbr,s.democratic||"",s.republican||"",s.other||""].join(" ").toLowerCase().includes(term));
+    const shown=states.filter(s=>(mode==="all"||(mode==="election"&&s.election)||(mode==="no"&&!s.election))&&[s.name,s.abbr,s.democratic||"",s.republican||"",s.other||""].join(" ").toLowerCase().includes(term));
     counter.textContent=shown.length+" state"+(shown.length===1?"":"s")+" shown · 35 elections in 2026 nationwide";
     list.innerHTML=shown.map(s=>'<article class="senate-state'+(s.election?'':' no-election')+'">'+
       '<h3>'+escapeHTML(s.name)+'<span class="abbr">'+escapeHTML(s.abbr)+'</span></h3>'+
